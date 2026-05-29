@@ -128,14 +128,14 @@ export default function Home() {
                   className="action-link"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#101827', padding: '14px 20px', borderRadius: 8, fontWeight: 900 }}
                 >
-                  Start a campaign <FaArrowRight />
+                  មើលសេវាកម្ម <FaArrowRight />
                 </Link>
                 <Link
                   to="/services"
                   className="action-link"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#101827', color: '#fff', padding: '14px 20px', borderRadius: 8, fontWeight: 900, border: '1px solid #101827' }}
                 >
-                  View services <FaPlay />
+                  Contact <FaPlay />
                 </Link>
               </div>
             </div>
