@@ -419,8 +419,8 @@ export default function Home() {
             </div>
             <div>
               <h4 style={{ margin: '0 0 14px', color: '#fdaf06', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1 }}>Contact</h4>
-              <p style={{ margin: '0 0 10px', color: '#cbd5e1' }}>info@lndigital.com</p>
-              <p style={{ margin: 0, color: '#cbd5e1' }}>Mon-Fri, 9AM-6PM</p>
+              <p style={{ margin: '0 0 10px', color: '#cbd5e1' }}>0979777420</p>
+              <p style={{ margin: 0, color: '#cbd5e1' }}>Page: PN Digital</p>
             </div>
           </div>
           <div style={{ marginTop: 34, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,.12)', color: '#94a3b8', fontSize: 14 }}>
