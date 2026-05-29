@@ -23,7 +23,7 @@ export default function OrderConfirmation(){
 
   if(!order){
     return (
-      <div style={{fontFamily:"Kantumruy Pro, system-ui, sans-serif",background:'#f8fafc',minHeight:'100vh',padding:'60px 20px'}}>
+      <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",background:'#f8fafc',minHeight:'100vh',padding:'60px 20px'}}>
         <div style={{maxWidth:760,margin:'0 auto',background:'#fff',borderRadius:20,padding:28,border:'1px solid #e2e8f0',textAlign:'center'}}>
           <h1 style={{margin:'0 0 10px',color:'#111827'}}>Order not found</h1>
           <p style={{margin:'0 0 18px',color:'#64748b'}}>We could not find the invoice for this order.</p>
@@ -41,7 +41,7 @@ export default function OrderConfirmation(){
   const date = order.createdAt ? new Date(order.createdAt) : new Date()
 
   return (
-    <div style={{fontFamily:"Kantumruy Pro, system-ui, sans-serif",background:'#f8fafc',minHeight:'100vh',padding:'36px 20px',color:'#0f172a'}}>
+    <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",background:'#f8fafc',minHeight:'100vh',padding:'36px 20px',color:'#0f172a'}}>
       <style>{`
         @media print{
           .invoice-actions{display:none!important}

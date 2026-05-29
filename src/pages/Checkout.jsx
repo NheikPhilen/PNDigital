@@ -115,7 +115,7 @@ export default function Checkout(){
   }
 
   return (
-    <div style={{fontFamily:"Kantumruy Pro, system-ui, sans-serif",background:'#f8fafc',color:'#0f172a',minHeight:'100vh'}}>
+    <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",background:'#f8fafc',color:'#0f172a',minHeight:'100vh'}}>
       <style>{`
         .checkout-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:28px;align-items:start}
         .checkout-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}

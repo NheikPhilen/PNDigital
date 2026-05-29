@@ -31,7 +31,7 @@ export default function Contact() {
   ]
 
   return (
-    <div style={{ fontFamily: "Kantumruy Pro, system-ui, sans-serif", minHeight: '100vh', background: 'linear-gradient(135deg, #fef5e7 0%, #fdaf06 100%)' }}>
+    <div style={{ fontFamily: "MIsansKhmer, system-ui, sans-serif", minHeight: '100vh', background: 'linear-gradient(135deg, #fef5e7 0%, #fdaf06 100%)' }}>
       <SiteHeader />
 
       {/* Hero Section */}

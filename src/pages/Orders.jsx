@@ -8,13 +8,13 @@ export default function Orders(){
   },[])
 
   if(!orders || orders.length===0) return (
-    <div style={{fontFamily:"Kantumruy Pro, system-ui, sans-serif",maxWidth:900,margin:'80px auto',padding:20,textAlign:'center'}}>
+    <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",maxWidth:900,margin:'80px auto',padding:20,textAlign:'center'}}>
       <div style={{background:'#fff',borderRadius:12,padding:28,border:'1px solid #f3f3f3'}}>No orders yet. <Link to="/">Start shopping</Link></div>
     </div>
   )
 
   return (
-    <div style={{fontFamily:"Kantumruy Pro, system-ui, sans-serif",maxWidth:900,margin:'40px auto',padding:20}}>
+    <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",maxWidth:900,margin:'40px auto',padding:20}}>
       <h2>Your Orders</h2>
       {orders.map(o=> (
         <div key={o.id} style={{background:'#fff',padding:16,borderRadius:10,marginBottom:12,border:'1px solid #f3f3f3'}}>

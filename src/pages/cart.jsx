@@ -51,7 +51,7 @@ export default function CartPage(){
   const totalCount = cart.reduce((s,i)=>s + (i.qty||0),0)
 
   return (
-    <div style={{fontFamily:"Kantumruy Pro, system-ui, sans-serif",padding:20,background:'linear-gradient(180deg,#fff 0%'}}>
+    <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",padding:20,background:'linear-gradient(180deg,#fff 0%'}}>
       <header style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'18px 28px',borderBottom:'1px solid rgba(0,0,0,.04)'}}>
         <Link to="/" style={{ display: 'flex', gap: 12, alignItems: 'center', textDecoration: 'none' }}>
           <img src={logo} alt="PN Digital" style={{ height: 48, width: 'auto', display: 'block', objectFit: 'contain' }} />

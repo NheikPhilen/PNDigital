@@ -13,48 +13,48 @@ import client from '../../assets/images/product/Client.jpg'
 export default function Home() {
   const coreServices = [
     {
-      title: 'សេវាកម្មប៊ូស',
-      label: 'Visibility',
+      title: '\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798\u1794\u17ca\u17bc\u179f',
+      label: '\u1794\u17d2\u179a\u1785\u17b6\u17c6\u1781\u17c2',
       icon: <FaChartLine />,
       description: 'Increase reach, engagement, and qualified inquiries with focused campaign support.',
-      features: ['Free Page 2k', 'Free ប៊ូស video និង post មិនកំណត់ពេញ១ខែ', 'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ']
+      features: ['Free Page 2k', 'Free \u1794\u17ca\u17bc\u179f video \u1793\u17b7\u1784 post \u1798\u17b7\u1793\u1780\u17c6\u178e\u178f\u17cb\u1796\u17c1\u1789\u17e1\u1781\u17c2', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
     },
     {
-      title: 'លក់ផេកខ្មែរ',
-      label: 'Sales',
+      title: '\u179b\u1780\u17cb\u1795\u17c1\u1780\u1781\u17d2\u1798\u17c2\u179a',
+      label: '\u1781\u17d2\u1798\u17c2\u179a\u179f\u17bb\u1791\u17d2\u1792 99%',
       icon: <FaLayerGroup />,
       description: 'Sell page follower packages and Page VIP boost live setup for businesses ready to grow faster.',
-      features: ['Free design cover page', 'ប្ដូរឈ្មោះផេក', 'ធានាជូនរយៈពេល១ខែ']
+      features: ['Free design cover page', '\u1794\u17d2\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7\u1795\u17c1\u1780', '\u1792\u17b6\u1793\u17b6\u1787\u17bc\u1793\u179a\u1799\u17c8\u1796\u17c1\u179b\u17e1\u1781\u17c2', 'free \u1794\u17ca\u17bc\u179f\u179a\u1799\u17c8\u1796\u17c1\u179b\u17e1\u17e5\u1790\u17d2\u1784\u17c3']
     },
     {
-      title: 'លក់TikTok',
+      title: '\u179b\u1780\u17cbTikTok',
       label: 'Content',
       icon: <SiTiktok />,
       description: 'Build TikTok campaigns that turn attention into followers, messages, and sales.',
-      features: ['មានចាប់ពី 1k-500k', 'Tធានា followerខ្មែរ', 'Freeដូរឈ្មោះ']
+      features: ['\u1798\u17b6\u1793\u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k', 'T\u1792\u17b6\u1793\u17b6 follower\u1781\u17d2\u1798\u17c2\u179a', 'Free\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7']
     }
   ]
 
   const processSteps = [
-    { title: 'គុណភាព', text: 'We clarify the audience, promise, price, and best channel before spending budget.' },
-    { title: 'ទំនួលខុសត្រូវ', text: 'Creative, content direction, targeting, and page positioning move together.' },
-    { title: 'បទពិសោធន៍', text: 'Reports turn into practical changes for reach, messages, and conversion.' }
+    { title: '\u1782\u17bb\u178e\u1797\u17b6\u1796', text: 'We clarify the audience, promise, price, and best channel before spending budget.' },
+    { title: '\u1791\u17c6\u1793\u17bd\u179b\u1781\u17bb\u179f\u178f\u17d2\u179a\u17bc\u179c', text: 'Creative, content direction, targeting, and page positioning move together.' },
+    { title: '\u1794\u1791\u1796\u17b7\u179f\u17c4\u1792\u1793\u17cd', text: 'Reports turn into practical changes for reach, messages, and conversion.' }
   ]
 
   const serviceList = [
-    'លក់ផេកខ្មែរ100%',
-    'លក់​​ Page VIP ប៊ូសឡាយ',
-    'លក់ BM Ad Account',
-    'លក់TikTok ចាប់ពី 1k-500k',
-    'លក់ Group Telegram'
+    '\u179b\u1780\u17cb\u1795\u17c1\u1780\u1781\u17d2\u1798\u17c2\u179a100%',
+    '\u179b\u1780\u17cb\u200b\u200b Page VIP \u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799',
+    '\u179b\u1780\u17cb BM Ad Account',
+    '\u179b\u1780\u17cbTikTok \u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k',
+    '\u179b\u1780\u17cb Group Telegram'
   ]
 
   const growthServiceList = [
-    'គ្រប់គ្រងលើការប៊ូស និងថែទាំផេកប្រចាំខែ',
-    'តម្លើងផេកធម្មតាទៅជាផេកប៊ូសឡាយបាន',
-    'តម្លើងចំនួន Follower និងដាក់ Blue Tick',
-    'ទទួលធ្វើ Poster Profile & Cover​ Page',
-    'ទទួលដោះស្រាយបញ្ហាPageគ្រប់ប្រភេទ'
+    '\u1782\u17d2\u179a\u1794\u17cb\u1782\u17d2\u179a\u1784\u179b\u17be\u1780\u17b6\u179a\u1794\u17ca\u17bc\u179f \u1793\u17b7\u1784\u1790\u17c2\u1791\u17b6\u17c6\u1795\u17c1\u1780\u1794\u17d2\u179a\u1785\u17b6\u17c6\u1781\u17c2',
+    '\u178f\u1798\u17d2\u179b\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u1791\u17c5\u1787\u17b6\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u1794\u17b6\u1793',
+    '\u178f\u1798\u17d2\u179b\u17be\u1784\u1785\u17c6\u1793\u17bd\u1793 Follower \u1793\u17b7\u1784\u178a\u17b6\u1780\u17cb Blue Tick',
+    '\u1791\u1791\u17bd\u179b\u1792\u17d2\u179c\u17be Poster Profile & Cover\u200b Page',
+    '\u1791\u1791\u17bd\u179b\u178a\u17c4\u17c7\u179f\u17d2\u179a\u17b6\u1799\u1794\u1789\u17d2\u17a0\u17b6Page\u1782\u17d2\u179a\u1794\u17cb\u1794\u17d2\u179a\u1797\u17c1\u1791'
   ]
 
   const clientFeedbackPhotos = [
@@ -64,7 +64,7 @@ export default function Home() {
   ]
 
   return (
-    <div style={{ fontFamily: 'Kantumruy Pro, system-ui, sans-serif', minHeight: '100vh', background: '#f6f7fb', color: '#111827' }}>
+    <div style={{ fontFamily: 'MIsansKhmer, system-ui, sans-serif', minHeight: '100vh', background: '#f6f7fb', color: '#111827' }}>
       <style>{`
         .hero-shell { min-height: calc(100vh - 76px); display: grid; align-items: center; }
         .hero-content { max-width: 760px; color: #101827; background: rgba(255,255,255,.94); border: 1px solid rgba(255,255,255,.78); border-radius: 8px; padding: clamp(26px, 4vw, 46px); box-shadow: 0 28px 70px rgba(9,13,23,.24); backdrop-filter: blur(10px); }
@@ -117,7 +117,7 @@ export default function Home() {
                 Digital growth studio
               </p>
               <h1 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.18, fontWeight: 950, letterSpacing: 0 }}>
-               ប៊ូសឡាយឲ្យចំអតិថិជនគោលដៅ ដំឡើងផេកធម្មតាឲ្យទៅជាប៊ូសពេលឡាយបាន មានលក់ផេកប៊ូសឡាយ
+                {'\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u17b2\u17d2\u1799\u1785\u17c6\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793\u1782\u17c4\u179b\u178a\u17c5 \u178a\u17c6\u17a1\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u17b2\u17d2\u1799\u1791\u17c5\u1787\u17b6\u1794\u17ca\u17bc\u179f\u1796\u17c1\u179b\u17a1\u17b6\u1799\u1794\u17b6\u1793 \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799'}
               </h1>
               <p style={{ margin: '24px 0 0', maxWidth: 620, color: '#4b5563', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.75 }}>
                 PN Digital boosts Live Streams to your target audience. Upgrade standard pages to support Live Boosting. Pre-made Live Boost pages for sale.
@@ -128,7 +128,7 @@ export default function Home() {
                   className="action-link"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#101827', padding: '14px 20px', borderRadius: 8, fontWeight: 900 }}
                 >
-                  មើលសេវាកម្ម <FaArrowRight />
+                  {'\u1798\u17be\u179b\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798 '}<FaArrowRight />
                 </Link>
                 <Link
                   to="/services"
@@ -147,10 +147,10 @@ export default function Home() {
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, alignItems: 'end', flexWrap: 'wrap', marginBottom: 30 }}>
               <div style={{ maxWidth: 690 }}>
                 <p className="section-eyebrow" style={{ color: '#0f766e' }}>Services</p>
-                <h2 className="section-title">សេវាកម្មដែលបងប្អូននឹងទទួលបានពី PN Digital.</h2>
+                <h2 className="section-title">{'\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798\u178a\u17c2\u179b\u1794\u1784\u1794\u17d2\u17a2\u17bc\u1793\u1793\u17b9\u1784\u1791\u1791\u17bd\u179b\u1794\u17b6\u1793\u1796\u17b8 PN Digital.'}</h2>
               </div>
               <Link to="/services" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#9a5b00', fontWeight: 900, textDecoration: 'none' }}>
-                Explore all services <FaArrowRight />
+                {'\u1798\u17be\u179b\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798\u1791\u17b6\u17c6\u1784\u17a2\u179f\u17cb'}<FaArrowRight />
               </Link>
             </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
                     background: '#fff',
                     border: '1px solid #e5e7eb',
                     borderRadius: 8,
-                    padding: 24,
+                    padding: 40,
                     minHeight: 360,
                     display: 'flex',
                     flexDirection: 'column',
@@ -172,18 +172,18 @@ export default function Home() {
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginBottom: 28 }}>
-                    <div style={{ width: 58, height: 58, borderRadius: 8, background: '#101827', color: '#fdaf06', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24 }}>
+                    <div style={{ width: 58, height: 58, borderRadius: 8, background: '#fdaf06', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24 }}>
                       {service.icon}
                     </div>
                     <span style={{ background: '#fffbeb', color: '#9a5b00', border: '1px solid #fde68a', borderRadius: 8, padding: '8px 10px', fontSize: 12, fontWeight: 950, textTransform: 'uppercase' }}>
                       {service.label}
                     </span>
                   </div>
-                  <h3 style={{ margin: '0 0 12px', fontSize: 24, fontWeight: 950, color: '#101827' }}>{service.title}</h3>
+                  <h3 style={{ margin: '0 0 12px', fontSize: 28, fontWeight: 950, color: '#101827' }}>{service.title}</h3>
                   <p style={{ margin: 0, color: '#4b5563', fontSize: 15, lineHeight: 1.75 }}>{service.description}</p>
                   <div style={{ display: 'grid', gap: 12, marginTop: 'auto', paddingTop: 28 }}>
                     {service.features.map((feature) => (
-                      <span key={feature} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#172033', fontSize: 14, fontWeight: 850 }}>
+                      <span key={feature} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#172033', fontSize: 16, fontWeight: 850 }}>
                         <span style={{ width: 24, height: 24, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto', fontSize: 12 }}>
                           <FaCheck />
                         </span>
@@ -201,7 +201,7 @@ export default function Home() {
           <div className="section-wrap split-grid">
             <div>
               <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Service list</p>
-              <h2 className="section-title">Digital Digial មានលក់ផេកខ្មែរ Followerខ្មែរសុទ្ធ 100%!</h2>
+              <h2 className="section-title" style={{ color: '#000000' }}>{'Digital Digial \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1781\u17d2\u1798\u17c2\u179a Follower\u1781\u17d2\u1798\u17c2\u179a\u179f\u17bb\u1791\u17d2\u1792 100%!'}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Choose the service you need, then we help prepare the right setup for selling, boosting, live promotion, TikTok growth, or ad account use.
               </p>
@@ -221,7 +221,7 @@ export default function Home() {
                       borderBottom: service === serviceList[serviceList.length - 1] ? 'none' : '1px solid #eef2f7'
                     }}
                   >
-                    <span style={{ width: 38, height: 38, borderRadius: 8, background: '#ecfdf5', color: '#0f766e', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>
+                    <span style={{ width: 38, height: 38, borderRadius: 8, background: '#fdaf06', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>
                       <FaCheck />
                     </span>
                     <span style={{ color: '#172033', fontSize: 18, fontWeight: 900 }}>{service}</span>
@@ -248,7 +248,7 @@ export default function Home() {
                       borderBottom: service === growthServiceList[growthServiceList.length - 1] ? 'none' : '1px solid #eef2f7'
                     }}
                   >
-                    <span style={{ width: 38, height: 38, borderRadius: 8, background: '#fffbeb', color: '#9a5b00', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>
+                    <span style={{ width: 38, height: 38, borderRadius: 8, background: '#fdaf06', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>
                       <FaCheck />
                     </span>
                     <span style={{ color: '#172033', fontSize: 18, fontWeight: 900 }}>{service}</span>
@@ -259,7 +259,7 @@ export default function Home() {
 
             <div className="growth-copy">
               <p className="section-eyebrow" style={{ color: '#0f766e' }}>Growth services</p>
-              <h2 className="section-title">PN Digital មានផ្ដល់ជូននូវសេវាកម្មប៊ូសផេក ជួយជម្រុញការលក់!</h2>
+              <h2 className="section-title">{'PN Digital \u1798\u17b6\u1793\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793\u1793\u17bc\u179c\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798\u1794\u17ca\u17bc\u179f\u1795\u17c1\u1780 \u1787\u17bd\u1799\u1787\u1798\u17d2\u179a\u17bb\u1789\u1780\u17b6\u179a\u179b\u1780\u17cb!'}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Boost your page, increase followers, improve engagement, and push more attention to your videos and live sessions.
               </p>
@@ -271,7 +271,7 @@ export default function Home() {
           <div className="section-wrap split-grid">
             <div>
               <p className="section-eyebrow" style={{ color: '#be185d' }}>Workflow</p>
-              <h2 className="section-title">ហេតយអ្វីបងៗគួរជ្រើសរើស PN Digital?</h2>
+              <h2 className="section-title">{'\u17a0\u17c1\u178f\u17bb\u17a2\u17d2\u179c\u17b8\u1782\u17bd\u179a\u1787\u17d2\u179a\u17be\u179f\u179a\u17be\u179f PN Digital?'}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Modern marketing works when the offer, content, and customer path feel connected. We keep the process direct, measurable, and easy to act on.
               </p>
@@ -304,7 +304,7 @@ export default function Home() {
               <h2 className="section-title">Built for brands that need clear action, not vague advice.</h2>
               <div style={{ display: 'grid', gap: 18, marginTop: 28 }}>
                 {[
-                  ['Offer first', 'ប៊ូសឡាយឲ្យចំអតិថិជនគោលដៅ ដំឡើងផេកធម្មតាឲ្យទៅជាប៊ូសពេលឡាយបាន មានលក់ផេកប៊ូសឡាយ'],
+                  ['Offer first', '\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u17b2\u17d2\u1799\u1785\u17c6\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793\u1782\u17c4\u179b\u178a\u17c5 \u178a\u17c6\u17a1\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u17b2\u17d2\u1799\u1791\u17c5\u1787\u17b6\u1794\u17ca\u17bc\u179f\u1796\u17c1\u179b\u17a1\u17b6\u1799\u1794\u17b6\u1793 \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799'],
                   ['Channel aware', 'TikTok, pages, and service offers each get a strategy that fits the buying moment.'],
                   ['Easy to measure', 'You get simple signals for reach, messages, customer interest, and next steps.']
                 ].map(([title, text]) => (
@@ -328,7 +328,7 @@ export default function Home() {
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, alignItems: 'end', flexWrap: 'wrap', marginBottom: 30 }}>
               <div style={{ maxWidth: 720 }}>
                 <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Client feedback</p>
-                <h2 className="section-title">រូបភាពលទ្ធផល និង feedback ពីអតិថិជន.</h2>
+                <h2 className="section-title">{'\u179a\u17bc\u1794\u1797\u17b6\u1796\u179b\u1791\u17d2\u1792\u1795\u179b \u1793\u17b7\u1784 feedback \u1796\u17b8\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793.'}</h2>
               </div>
               <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', fontWeight: 900, textDecoration: 'none' }}>
                 Work with us <FaArrowRight />
@@ -431,3 +431,4 @@ export default function Home() {
     </div>
   )
 }
+
