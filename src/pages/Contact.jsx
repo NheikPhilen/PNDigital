@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaFacebookF, FaLocationDot, FaPaperPlane, FaPhone, FaRegClock } from 'react-icons/fa6'
-import SiteHeader from '../components/SiteHeader'
 import contactHero from '../../assets/images/HeroBanner.jpg'
 
 const initialFormData = {
@@ -16,10 +15,6 @@ export default function Contact() {
   const [formData, setFormData] = useState(initialFormData)
   const [submitState, setSubmitState] = useState('idle')
 
-  const telegramBotUrl = import.meta.env.VITE_TELEGRAM_BOT_URL
-  const telegramBotToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN
-  const telegramChatId = import.meta.env.VITE_TELEGRAM_CHAT_ID
-
   const contactInfo = [
     { icon: <FaPhone />, label: 'Phone', value: '0979777420', href: 'tel:0979777420' },
     { icon: <FaFacebookF />, label: 'Facebook Page', value: 'PN Digital', href: 'https://facebook.com/' },
@@ -33,30 +28,21 @@ export default function Contact() {
   }
 
   const buildTelegramMessage = () => [
-    'New PN Digital request',
+    '<b>New PN Digital request</b>',
     '',
-    `Name: ${formData.name}`,
-    `Phone: ${formData.phone}`,
-    `Email: ${formData.email || 'Not provided'}`,
+    `Name: ${formData.name.trim()}`,
+    `Phone: ${formData.phone.trim()}`,
+    `Email: ${formData.email.trim() || 'Not provided'}`,
     `Service: ${formData.service}`,
     '',
-    `Message: ${formData.message}`
+    `Message: ${formData.message.trim()}`
   ].join('\n')
 
   const sendTelegramAlert = async () => {
-    const endpoint = telegramBotUrl || (telegramBotToken ? `https://api.telegram.org/bot${telegramBotToken}/sendMessage` : '')
-
-    if (!endpoint || !telegramChatId) {
-      throw new Error('Telegram bot URL/token or chat id is missing')
-    }
-
-    const response = await fetch(endpoint, {
+    const response = await fetch('/api/send-telegram', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: telegramChatId,
-        text: buildTelegramMessage()
-      })
+      body: JSON.stringify({ text: buildTelegramMessage() })
     })
 
     if (!response.ok) {
@@ -101,8 +87,6 @@ export default function Contact() {
           .contact-form-row, .contact-cta { grid-template-columns: 1fr; }
         }
       `}</style>
-
-      <SiteHeader />
 
       <main>
         <section
@@ -210,7 +194,7 @@ export default function Contact() {
               </button>
 
               <p style={{ margin: '14px 0 0', color: '#6b7280', fontSize: 13, lineHeight: 1.6 }}>
-                Telegram alerts require `VITE_TELEGRAM_BOT_URL` or `VITE_TELEGRAM_BOT_TOKEN`, plus `VITE_TELEGRAM_CHAT_ID`.
+                Telegram alerts are sent through the site API.
               </p>
             </form>
           </div>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
 
 export default function CartPage(){
   const [cart, setCart] = useState(()=>{
@@ -52,18 +51,6 @@ export default function CartPage(){
 
   return (
     <div style={{fontFamily:"MIsansKhmer, system-ui, sans-serif",padding:20,background:'linear-gradient(180deg,#fff 0%'}}>
-      <header style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'18px 28px',borderBottom:'1px solid rgba(0,0,0,.04)'}}>
-        <Link to="/" style={{ display: 'flex', gap: 12, alignItems: 'center', textDecoration: 'none' }}>
-          <img src={logo} alt="PN Digital" style={{ height: 48, width: 'auto', display: 'block', objectFit: 'contain' }} />
-          <div>
-            <div style={{fontSize:12,color:'#6b7280'}}>Your cart</div>
-          </div>
-        </Link>
-        <div>
-          <a href="/" style={{padding:'8px 12px',borderRadius:10,border:'1px solid rgba(0,0,0,.06)',textDecoration:'none',color:'#111'}}>Continue shopping</a>
-        </div>
-      </header>
-
       <main style={{maxWidth:1100,margin:'28px auto',padding:'0 20px'}}>
         <div style={{display:'grid',gridTemplateColumns:'1fr 360px',gap:28}}>
           <section style={{background:'#fff',borderRadius:14,padding:18,border:'1px solid rgba(0,0,0,.04)'}}>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaBullseye, FaChartLine, FaCheck, FaHandshake, FaLayerGroup } from 'react-icons/fa6'
-import SiteHeader from '../components/SiteHeader'
 import aboutHero from '../../assets/images/HeroBanner.jpg'
 import pageList from '../../assets/images/pagelist.jpg'
 
@@ -57,8 +56,6 @@ export default function About() {
           .about-stat-grid { grid-template-columns: 1fr; }
         }
       `}</style>
-
-      <SiteHeader />
 
       <main>
         <section

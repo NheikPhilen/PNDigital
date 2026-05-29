@@ -1,23 +1,35 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { FaBars, FaXmark, FaArrowRight } from 'react-icons/fa6'
+import React, { useEffect, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { FaArrowRight, FaBars, FaXmark } from 'react-icons/fa6'
 import logo from '../../assets/images/logo.png'
 
-export default function SiteHeader({ variant = 'default' }) {
+export default function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const isHome = variant === 'home'
+  const location = useLocation()
 
   const closeMenu = () => setIsMenuOpen(false)
 
   const navLinks = [
     { to: '/', label: 'Home' },
-    { to: '/about', label: 'អំពីយើង' },
-    { to: '/services', label: 'សេវាកម្ម' },
+    { to: '/about', label: 'About' },
+    { to: '/services', label: 'Services' },
+    { to: '/cart', label: 'Cart' },
     { to: '/contact', label: 'Contact', cta: true }
   ]
 
+  useEffect(() => {
+    closeMenu()
+  }, [location.pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMenuOpen])
+
   return (
-    <header className={`site-header ${isHome ? 'site-header-home' : ''}`}>
+    <header className="site-header">
       <Link to="/" aria-label="PN Digital home" className="site-logo" onClick={closeMenu}>
         <img src={logo} alt="PN Digital" className="site-logo-image" />
       </Link>
@@ -50,15 +62,20 @@ export default function SiteHeader({ variant = 'default' }) {
         </Link>
 
         {navLinks.map((link) => (
-          <Link
+          <NavLink
             key={link.to}
             to={link.to}
-            className={link.cta ? 'site-nav-link site-nav-cta' : 'site-nav-link'}
+            end={link.to === '/'}
+            className={({ isActive }) => [
+              'site-nav-link',
+              link.cta ? 'site-nav-cta' : '',
+              isActive ? 'is-active' : ''
+            ].filter(Boolean).join(' ')}
             onClick={closeMenu}
           >
             {link.label}
             {link.cta && <FaArrowRight />}
-          </Link>
+          </NavLink>
         ))}
       </nav>
     </header>

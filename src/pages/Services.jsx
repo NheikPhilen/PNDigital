@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaBullhorn, FaChartLine, FaCheck, FaLayerGroup, FaPlay, FaShieldHalved } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
-import SiteHeader from '../components/SiteHeader'
 import serviceHero from '../../assets/images/HeroBanner.jpg'
 import pageVip from '../../assets/images/product/PageVIP.jpg'
 import feedback from '../../assets/images/product/Feedback.jpg'
@@ -60,8 +59,6 @@ export default function Services() {
           .detail-grid { grid-template-columns: 1fr; }
         }
       `}</style>
-
-      <SiteHeader />
 
       <main>
         <section

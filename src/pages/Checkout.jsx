@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
 
 function loadCart(){
   try{
@@ -127,20 +126,9 @@ export default function Checkout(){
         @media (max-width: 860px){
           .checkout-grid{grid-template-columns:1fr}
           .checkout-form-grid{grid-template-columns:1fr}
-          .checkout-header{padding:16px!important}
           .checkout-summary{position:static!important}
         }
       `}</style>
-
-      <header className="checkout-header" style={{display:'flex',alignItems:'center',justifyContent:'space-between',padding:'18px 28px',background:'#fff',borderBottom:'1px solid rgba(15,23,42,.06)',position:'sticky',top:0,zIndex:5}}>
-        <div style={{display:'flex',gap:12,alignItems:'center'}}>
-          <a href="/" style={{textDecoration:'none'}}><img src={logo} alt="PN Digital" style={{ height: 48, width: 'auto', display: 'block', objectFit: 'contain' }} /></a>
-          <div>
-            <div style={{fontSize:12,color:'#64748b',fontWeight:700,textTransform:'uppercase',letterSpacing:'.14em'}}>Secure checkout</div>
-          </div>
-        </div>
-        <a href="/cart" style={{textDecoration:'none',color:'#be185d',fontWeight:700,background:'#fdf2f8',padding:'10px 14px',borderRadius:12}}>Back to cart</a>
-      </header>
 
       <main style={{maxWidth:1180,margin:'0 auto',padding:'36px 20px 48px'}}>
         <div style={{marginBottom:28}}>

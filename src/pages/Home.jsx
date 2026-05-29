@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaBullseye, FaChartLine, FaCheck, FaLayerGroup, FaMessage, FaPlay } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
-import SiteHeader from '../components/SiteHeader'
 import heroBanner from '../../assets/images/HeroBanner.jpg'
 import pageList from '../../assets/images/pagelist.jpg'
 import logo from '../../assets/images/logo.png'
@@ -33,12 +32,6 @@ export default function Home() {
       description: 'Build TikTok campaigns that turn attention into followers, messages, and sales.',
       features: ['\u1798\u17b6\u1793\u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k', 'T\u1792\u17b6\u1793\u17b6 follower\u1781\u17d2\u1798\u17c2\u179a', 'Free\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7']
     }
-  ]
-
-  const processSteps = [
-    { title: '\u1782\u17bb\u178e\u1797\u17b6\u1796', text: 'We clarify the audience, promise, price, and best channel before spending budget.' },
-    { title: '\u1791\u17c6\u1793\u17bd\u179b\u1781\u17bb\u179f\u178f\u17d2\u179a\u17bc\u179c', text: 'Creative, content direction, targeting, and page positioning move together.' },
-    { title: '\u1794\u1791\u1796\u17b7\u179f\u17c4\u1792\u1793\u17cd', text: 'Reports turn into practical changes for reach, messages, and conversion.' }
   ]
 
   const serviceList = [
@@ -96,8 +89,6 @@ export default function Home() {
           .footer-grid { grid-template-columns: 1fr!important; }
         }
       `}</style>
-
-      <SiteHeader variant="home" />
 
       <main>
         <section

@@ -4,6 +4,11 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import CartPage from './pages/cart'
+import Checkout from './pages/Checkout'
+import OrderConfirmation from './pages/OrderConfirmation'
+import Orders from './pages/Orders'
+import SiteHeader from './components/SiteHeader'
 import promotionImage from '../assets/images/promotion.jpg'
 
 export default function App(){
@@ -37,11 +42,17 @@ export default function App(){
         </div>
       )}
 
+      <SiteHeader />
+
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/services" element={<Services/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/cart" element={<CartPage/>} />
+        <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/order-confirmation" element={<OrderConfirmation/>} />
+        <Route path="/orders" element={<Orders/>} />
       </Routes>
     </>
   )
