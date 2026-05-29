@@ -6,7 +6,7 @@ function loadOrder(id){
   try{
     const orders = JSON.parse(localStorage.getItem('orders') || '[]')
     return orders.find(order=>order.id === id) || null
-  }catch(e){
+  }catch{
     return null
   }
 }

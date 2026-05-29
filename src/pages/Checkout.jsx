@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo.png'
 function loadCart(){
   try{
     return JSON.parse(localStorage.getItem('cart') || '[]') || []
-  }catch(e){
+  }catch{
     return []
   }
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Orders(){
   const [orders, setOrders] = useState([])
   useEffect(()=>{
-    try{ setOrders(JSON.parse(localStorage.getItem('orders')||'[]')) }catch(e){ setOrders([]) }
+    try{ setOrders(JSON.parse(localStorage.getItem('orders')||'[]')) }catch{ setOrders([]) }
   },[])
 
   if(!orders || orders.length===0) return (

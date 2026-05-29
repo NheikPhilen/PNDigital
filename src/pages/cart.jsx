@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo.png'
 
 export default function CartPage(){
   const [cart, setCart] = useState(()=>{
-    try{ return JSON.parse(localStorage.getItem('cart')||'[]') || [] }catch(e){ return [] }
+    try{ return JSON.parse(localStorage.getItem('cart')||'[]') || [] }catch{ return [] }
   })
   const [pendingRemove, setPendingRemove] = useState(null)
   const [showEmptyCartPopup, setShowEmptyCartPopup] = useState(false)

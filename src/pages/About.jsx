@@ -1,31 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
+import SiteHeader from '../components/SiteHeader'
 
 export default function About() {
   return (
     <div style={{ fontFamily: "Kantumruy Pro, system-ui, sans-serif", minHeight: '100vh', background: 'linear-gradient(135deg, #fef5e7 0%, #fdaf06 100%)' }}>
-      {/* Navigation Header */}
-      <header style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '10px 40px',
-        background: 'rgba(255, 255, 255, 0.9)',
-        borderBottom: '2px solid #fdaf06',
-        backdropFilter: 'blur(10px)',
-        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
-      }}>
-        <Link to="/" style={{ display: 'flex', gap: 12, alignItems: 'center', textDecoration: 'none' }}>
-          <img src={logo} alt="PN Digital" style={{ height: 52, width: 'auto', display: 'block', objectFit: 'contain' }} />
-        </Link>
-        <nav style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
-          <Link to="/" style={{ textDecoration: 'none', color: '#b45309', fontWeight: 600 }}>Home</Link>
-          <Link to="/about" style={{ textDecoration: 'none', color: '#b45309', fontWeight: 600 }}>About</Link>
-          <Link to="/services" style={{ textDecoration: 'none', color: '#b45309', fontWeight: 600 }}>Services</Link>
-          <Link to="/contact" style={{ textDecoration: 'none', color: '#fff', background: '#f39c12', padding: '10px 20px', borderRadius: 8, fontWeight: 600 }}>Contact</Link>
-        </nav>
-      </header>
+      <SiteHeader />
 
       {/* Hero Section */}
       <section style={{
