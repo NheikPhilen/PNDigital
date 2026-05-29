@@ -45,6 +45,10 @@ export default function SiteHeader({ variant = 'default' }) {
         className={`site-nav ${isMenuOpen ? 'is-open' : ''}`}
         aria-label="Main navigation"
       >
+        <Link to="/" aria-label="PN Digital home" className="site-drawer-logo" onClick={closeMenu}>
+          <img src={logo} alt="PN Digital" className="site-drawer-logo-image" />
+        </Link>
+
         {navLinks.map((link) => (
           <Link
             key={link.to}

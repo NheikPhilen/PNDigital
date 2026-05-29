@@ -78,6 +78,8 @@ export default function Home() {
         .section-eyebrow { margin: 0 0 10px; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.4px; }
         .section-title { margin: 0; font-size: clamp(30px, 5vw, 52px); line-height: 1.05; font-weight: 950; letter-spacing: 0; }
         .split-grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(320px, 1.05fr); gap: 34px; align-items: center; }
+        .growth-list { order: 1; }
+        .growth-copy { order: 2; }
         @media (max-width: 900px) {
           .hero-shell { min-height: auto; }
           .split-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -85,6 +87,8 @@ export default function Home() {
           .metric-strip { grid-template-columns: 1fr; margin-top: 34px; }
           .cta-grid { grid-template-columns: 1fr!important; }
           .footer-grid { grid-template-columns: 1fr 1fr!important; }
+          .growth-copy { order: 1; }
+          .growth-list { order: 2; }
         }
         @media (max-width: 560px) {
           .hero-actions { width: 100%; }
@@ -203,7 +207,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: 8, padding: 24, boxShadow: '0 16px 42px rgba(17,24,39,.08)' }}>
+            <div className="growth-list" style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: 8, padding: 24, boxShadow: '0 16px 42px rgba(17,24,39,.08)' }}>
               <div style={{ display: 'grid', gap: 14 }}>
                 {serviceList.map((service) => (
                   <div
@@ -253,7 +257,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
+            <div className="growth-copy">
               <p className="section-eyebrow" style={{ color: '#0f766e' }}>Growth services</p>
               <h2 className="section-title">PN Digital មានផ្ដល់ជូននូវសេវាកម្មប៊ូសផេក ជួយជម្រុញការលក់!</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>

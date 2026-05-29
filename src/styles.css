@@ -110,6 +110,10 @@ textarea {
   display: none;
 }
 
+.site-drawer-logo {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .site-header,
   .site-header-home {
@@ -156,7 +160,7 @@ textarea {
     align-items: stretch;
     flex-direction: column;
     gap: 8px;
-    padding: 92px 20px 24px;
+    padding: 22px 20px 24px;
     background: #fff;
     border-right: 1px solid rgba(17, 24, 39, 0.08);
     box-shadow: 22px 0 52px rgba(17, 24, 39, 0.2);
@@ -166,6 +170,21 @@ textarea {
 
   .site-nav.is-open {
     transform: translateX(0);
+  }
+
+  .site-drawer-logo {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 22px;
+    text-decoration: none;
+  }
+
+  .site-drawer-logo-image {
+    height: 68px;
+    width: auto;
+    display: block;
+    object-fit: contain;
   }
 
   .site-nav-link,
