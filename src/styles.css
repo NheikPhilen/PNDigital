@@ -13,7 +13,7 @@
 @font-face {
   font-family: "MIsansKhmer";
   src: url("../assets/fonts/MiSansKhmer-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -196,14 +196,14 @@ textarea {
   gap: 8px;
   text-decoration: none;
   color: #172033;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .site-header:not(.site-header-home) .site-nav-link {
   color: #b45309;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .site-nav-cta {
@@ -211,7 +211,7 @@ textarea {
   background: var(--primary-yellow);
   padding: 10px 16px;
   border-radius: 8px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .site-header:not(.site-header-home) .site-nav-cta {
@@ -310,8 +310,8 @@ textarea {
     padding: 14px 12px;
     border-radius: 8px;
     color: #172033;
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 21px;
+    font-weight: 700;
   }
 
   .site-nav-link:hover {
@@ -324,6 +324,6 @@ textarea {
     margin-top: 8px;
     color: #101827;
     background: var(--primary-yellow);
-    font-weight: 900;
+    font-weight: 800;
   }
 }

@@ -4,7 +4,7 @@ import { FaArrowRight, FaBullseye, FaChartLine, FaCheck, FaLayerGroup, FaMessage
 import { SiTiktok } from 'react-icons/si'
 import SiteHeader from '../components/SiteHeader'
 import heroBanner from '../../assets/images/HeroBanner.jpg'
-import heroThree from '../../assets/images/Hero3.jpg'
+import pageList from '../../assets/images/pagelist.jpg'
 import logo from '../../assets/images/logo.png'
 import promotionImage from '../../assets/images/product/PageVIP.jpg'
 import feedback from '../../assets/images/product/Feedback.jpg'
@@ -117,7 +117,7 @@ export default function Home() {
                 Digital growth studio
               </p>
               <h1 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.18, fontWeight: 950, letterSpacing: 0 }}>
-                {'\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u17b2\u17d2\u1799\u1785\u17c6\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793\u1782\u17c4\u179b\u178a\u17c5 \u178a\u17c6\u17a1\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u17b2\u17d2\u1799\u1791\u17c5\u1787\u17b6\u1794\u17ca\u17bc\u179f\u1796\u17c1\u179b\u17a1\u17b6\u1799\u1794\u17b6\u1793 \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799'}
+                ភ្នាក់ងារជួយជម្រុញការលក់របស់ម្ចាស់អាជីវកម្មឲ្យចំអតិថិជនគោលដៅ!
               </h1>
               <p style={{ margin: '24px 0 0', maxWidth: 620, color: '#4b5563', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.75 }}>
                 PN Digital boosts Live Streams to your target audience. Upgrade standard pages to support Live Boosting. Pre-made Live Boost pages for sale.
@@ -266,47 +266,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section className="section-pad" style={{ padding: '82px 40px', background: '#f6f7fb' }}>
-          <div className="section-wrap split-grid">
-            <div>
-              <p className="section-eyebrow" style={{ color: '#be185d' }}>Workflow</p>
-              <h2 className="section-title">{'\u17a0\u17c1\u178f\u17bb\u17a2\u17d2\u179c\u17b8\u1782\u17bd\u179a\u1787\u17d2\u179a\u17be\u179f\u179a\u17be\u179f PN Digital?'}</h2>
-              <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
-                Modern marketing works when the offer, content, and customer path feel connected. We keep the process direct, measurable, and easy to act on.
-              </p>
-            </div>
-            <div style={{ display: 'grid', gap: 14 }}>
-              {processSteps.map((step, index) => (
-                <article
-                  className="process-card"
-                  key={step.title}
-                  style={{ display: 'grid', gridTemplateColumns: '54px 1fr', gap: 16, alignItems: 'start', background: '#fff', border: '1px solid #e5e7eb', borderRadius: 8, padding: 20, boxShadow: '0 14px 36px rgba(17,24,39,.06)' }}
-                >
-                  <div style={{ width: 54, height: 54, borderRadius: 8, background: index === 1 ? '#0f766e' : '#101827', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 950 }}>
-                    0{index + 1}
-                  </div>
-                  <div>
-                    <h3 style={{ margin: '0 0 8px', fontSize: 20, fontWeight: 950 }}>{step.title}</h3>
-                    <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.65 }}>{step.text}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="section-pad" style={{ padding: '82px 40px', background: '#101827', color: '#fff' }}>
           <div className="section-wrap split-grid">
-            <div style={{ minHeight: 430, borderRadius: 8, overflow: 'hidden', background: `linear-gradient(180deg, rgba(16,24,39,0) 35%, rgba(16,24,39,.72) 100%), url(${heroThree}) center / cover no-repeat`, boxShadow: '0 28px 74px rgba(0,0,0,.28)' }} />
+            <div style={{ width: '100%', aspectRatio: '1 / 1', borderRadius: 8, overflow: 'hidden', background: `linear-gradient(180deg, rgba(16,24,39,0) 35%, rgba(16,24,39,.72) 100%), url(${pageList}) center / cover no-repeat`, boxShadow: '0 28px 74px rgba(0,0,0,.28)' }} />
             <div>
-              <p className="section-eyebrow" style={{ color: '#5eead4' }}>Why PN Digital</p>
-              <h2 className="section-title">Built for brands that need clear action, not vague advice.</h2>
+              <p className="section-eyebrow" style={{ color: '#ffffff' }}>Why Choose Us?</p>
+              <h2 className="section-title">ហេតុអ្វីគួរជ្រើសរើសយក PN Digital?</h2>
               <div style={{ display: 'grid', gap: 18, marginTop: 28 }}>
                 {[
-                  ['Offer first', '\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u17b2\u17d2\u1799\u1785\u17c6\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793\u1782\u17c4\u179b\u178a\u17c5 \u178a\u17c6\u17a1\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u17b2\u17d2\u1799\u1791\u17c5\u1787\u17b6\u1794\u17ca\u17bc\u179f\u1796\u17c1\u179b\u17a1\u17b6\u1799\u1794\u17b6\u1793 \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799'],
-                  ['Channel aware', 'TikTok, pages, and service offers each get a strategy that fits the buying moment.'],
-                  ['Easy to measure', 'You get simple signals for reach, messages, customer interest, and next steps.']
+                  ['គុណភាព', '\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u17b2\u17d2\u1799\u1785\u17c6\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793\u1782\u17c4\u179b\u178a\u17c5 \u178a\u17c6\u17a1\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u17b2\u17d2\u1799\u1791\u17c5\u1787\u17b6\u1794\u17ca\u17bc\u179f\u1796\u17c1\u179b\u17a1\u17b6\u1799\u1794\u17b6\u1793 \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799'],
+                  ['បទពិសោធន៍', 'TikTok, pages, and service offers each get a strategy that fits the buying moment.'],
+                  ['ទំនួលខុសត្រូវ', 'You get simple signals for reach, messages, customer interest, and next steps.']
                 ].map(([title, text]) => (
                   <div key={title} style={{ display: 'grid', gridTemplateColumns: '44px 1fr', gap: 14 }}>
                     <div style={{ width: 44, height: 44, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>

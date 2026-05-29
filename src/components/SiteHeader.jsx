@@ -11,8 +11,8 @@ export default function SiteHeader({ variant = 'default' }) {
 
   const navLinks = [
     { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/services', label: 'Services' },
+    { to: '/about', label: 'អំពីយើង' },
+    { to: '/services', label: 'សេវាកម្ម' },
     { to: '/contact', label: 'Contact', cta: true }
   ]
 
