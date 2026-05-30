@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaArrowRight, FaFacebookF, FaLocationDot, FaPaperPlane, FaPhone, FaRegClock } from 'react-icons/fa6'
+import { FaArrowRight, FaFacebookF, FaLocationDot, FaPaperPlane, FaPhone, FaRegClock, FaTelegram } from 'react-icons/fa6'
 import contactHero from '../../assets/images/HeroBanner.jpg'
 
 const initialFormData = {
@@ -17,9 +17,8 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: <FaPhone />, label: 'Phone', value: '0979777420', href: 'tel:0979777420' },
-    { icon: <FaFacebookF />, label: 'Facebook Page', value: 'PN Digital', href: 'https://facebook.com/' },
-    { icon: <FaLocationDot />, label: 'Location', value: 'Phnom Penh, Cambodia', href: '#' },
-    { icon: <FaRegClock />, label: 'Response time', value: 'Fast support for active clients', href: '#' }
+    { icon: <FaTelegram />, label: 'Telegram', value: '@PhaNet0903', href: 'https://t.me/PhaNet0903' },
+    { icon: <FaFacebookF />, label: 'Facebook Page', value: 'PN Digital', href: 'https://www.facebook.com/profile.php?id=61569384341081' }
   ]
 
   const handleInputChange = (event) => {
@@ -69,59 +68,49 @@ export default function Contact() {
       <style>{`
         .contact-wrap { max-width: 1200px; margin: 0 auto; }
         .contact-pad { padding: 78px 40px; }
-        .contact-grid { display: grid; grid-template-columns: minmax(0, .92fr) minmax(340px, 1.08fr); gap: 34px; align-items: start; }
+        .contact-hero { position: relative; overflow: hidden; min-height: calc(100vh - 74px); display: flex; align-items: center; }
+        .contact-hero-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(360px, 1.1fr); gap: 34px; align-items: center; }
         .contact-eyebrow { margin: 0 0 12px; color: #5eead4; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.4px; }
         .contact-title { margin: 0; font-size: clamp(34px, 5vw, 62px); line-height: 1.06; font-weight: 950; letter-spacing: 0; }
-        .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; box-shadow: 0 18px 48px rgba(17,24,39,.08); }
+        .contact-card { border: 1px solid rgba(255,255,255,.82); border-radius: 8px; background: rgba(255,255,255,.96); box-shadow: 0 28px 80px rgba(0,0,0,.22); backdrop-filter: blur(14px); }
         .contact-form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
         .contact-cta { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; }
         .contact-field { display: grid; gap: 8px; }
         .contact-field label { color: #172033; font-size: 14px; font-weight: 900; }
         .contact-input { width: 100%; border: 1px solid #d8dee8; border-radius: 8px; background: #fff; color: #101827; padding: 14px 14px; font-size: 15px; outline: none; }
         .contact-input:focus { border-color: #fdaf06; box-shadow: 0 0 0 4px rgba(253,175,6,.16); }
-        .contact-info-link { display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: center; padding: 18px; border-radius: 8px; border: 1px solid #e5e7eb; background: #fff; text-decoration: none; }
+        .contact-info-list { display: grid; gap: 12px; margin-top: 28px; }
+        .contact-info-link { display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: center; padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,.26); background: rgba(255,255,255,.12); text-decoration: none; backdrop-filter: blur(10px); }
         .contact-info-icon { width: 46px; height: 46px; border-radius: 8px; background: #fdaf06; color: #101827; display: flex; align-items: center; justify-content: center; font-size: 18px; }
         @media (max-width: 900px) {
           .contact-pad { padding: 58px 18px; }
-          .contact-grid { grid-template-columns: 1fr; }
+          .contact-hero { align-items: start; min-height: auto; }
+          .contact-hero-grid { grid-template-columns: 1fr; }
           .contact-form-row, .contact-cta { grid-template-columns: 1fr; }
         }
       `}</style>
 
       <main>
         <section
-          className="contact-pad"
+          className="contact-pad contact-hero"
           style={{
-            backgroundImage: `linear-gradient(90deg, rgba(16,24,39,.88) 0%, rgba(16,24,39,.68) 55%, rgba(16,24,39,.38) 100%), url(${contactHero})`,
+            backgroundImage: `linear-gradient(90deg, rgba(16,24,39,.9) 0%, rgba(16,24,39,.72) 52%, rgba(16,24,39,.54) 100%), url(${contactHero})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
         >
-          <div className="contact-wrap" style={{ color: '#fff' }}>
-            <p className="contact-eyebrow">Contact PN Digital</p>
-            <h1 className="contact-title">Tell us what you want to grow.</h1>
-            <p style={{ margin: '22px 0 0', maxWidth: 680, color: '#dbeafe', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.8 }}>
-              Send your request and our team will review your page, service, or campaign goal. New requests can alert our Telegram team instantly.
-            </p>
-          </div>
-        </section>
+          <div className="contact-wrap contact-hero-grid">
+            <div style={{ color: '#fff' }}>
+              <p className="contact-eyebrow">Contact PN Digital</p>
+              <h1 className="contact-title">Tell us what you want to grow.</h1>
 
-        <section className="contact-pad">
-          <div className="contact-wrap contact-grid">
-            <div>
-              <p className="contact-eyebrow" style={{ color: '#9a5b00' }}>Fast response</p>
-              <h2 className="contact-title" style={{ fontSize: 'clamp(30px, 4vw, 48px)' }}>Start with a short request.</h2>
-              <p style={{ margin: '20px 0 28px', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>
-                Share your page, product, or service goal. We will help choose the right setup for boosting, page selling, TikTok growth, or campaign support.
-              </p>
-
-              <div style={{ display: 'grid', gap: 14 }}>
+              <div className="contact-info-list">
                 {contactInfo.map((info) => (
                   <a key={info.label} href={info.href} className="contact-info-link">
                     <span className="contact-info-icon">{info.icon}</span>
                     <span>
-                      <strong style={{ display: 'block', color: '#101827', fontSize: 16 }}>{info.label}</strong>
-                      <span style={{ display: 'block', marginTop: 4, color: '#4b5563', lineHeight: 1.5 }}>{info.value}</span>
+                      <strong style={{ display: 'block', color: '#fff', fontSize: 16 }}>{info.label}</strong>
+                      <span style={{ display: 'block', marginTop: 4, color: '#dbeafe', lineHeight: 1.5 }}>{info.value}</span>
                     </span>
                   </a>
                 ))}
@@ -192,10 +181,6 @@ export default function Contact() {
               >
                 {submitState === 'sending' ? 'Sending request...' : 'Send request'} {submitState === 'sending' ? null : <FaPaperPlane />}
               </button>
-
-              <p style={{ margin: '14px 0 0', color: '#6b7280', fontSize: 13, lineHeight: 1.6 }}>
-                Telegram alerts are sent through the site API.
-              </p>
             </form>
           </div>
         </section>

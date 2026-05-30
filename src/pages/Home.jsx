@@ -1,6 +1,6 @@
 ﻿import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaArrowRight, FaBullseye, FaChartLine, FaCheck, FaLayerGroup, FaMessage, FaPlay } from 'react-icons/fa6'
+import { FaArrowRight, FaBullseye, FaChartLine, FaCheck, FaLayerGroup, FaMessage, FaPlay, FaTelegram } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
 import heroBanner from '../../assets/images/HeroBanner.jpg'
 import pageList from '../../assets/images/pagelist.jpg'
@@ -30,7 +30,7 @@ export default function Home() {
       label: 'Content',
       icon: <SiTiktok />,
       description: 'Build TikTok campaigns that turn attention into followers, messages, and sales.',
-      features: ['\u1798\u17b6\u1793\u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k', 'T\u1792\u17b6\u1793\u17b6 follower\u1781\u17d2\u1798\u17c2\u179a', 'Free\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7']
+      features: ['\u1798\u17b6\u1793\u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k', '\u1792\u17b6\u1793\u17b6 follower\u1781\u17d2\u1798\u17c2\u179a', 'Free\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7']
     }
   ]
 
@@ -121,13 +121,15 @@ export default function Home() {
                 >
                   {'\u1798\u17be\u179b\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798 '}<FaArrowRight />
                 </Link>
-                <Link
-                  to="/services"
+                <a
+                  href="https://t.me/PhaNet0903"
+                  target="_blank"
+                  rel="noreferrer"
                   className="action-link"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#101827', color: '#fff', padding: '14px 20px', borderRadius: 8, fontWeight: 900, border: '1px solid #101827' }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#008bde', color: '#fff', padding: '14px 20px', borderRadius: 8, fontWeight: 900 }}
                 >
-                  Contact <FaPlay />
-                </Link>
+                  Telegram <FaTelegram />
+                </a>
               </div>
             </div>
           </div>
@@ -191,7 +193,7 @@ export default function Home() {
         <section className="section-pad" style={{ padding: '76px 40px', background: '#f6f7fb' }}>
           <div className="section-wrap split-grid">
             <div>
-              <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Service list</p>
+              <p className="section-eyebrow" style={{ color: '#9a5b00' }}>ការលក់</p>
               <h2 className="section-title" style={{ color: '#000000' }}>{'Digital Digial \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1781\u17d2\u1798\u17c2\u179a Follower\u1781\u17d2\u1798\u17c2\u179a\u179f\u17bb\u1791\u17d2\u1792 100%!'}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Choose the service you need, then we help prepare the right setup for selling, boosting, live promotion, TikTok growth, or ad account use.
@@ -249,7 +251,7 @@ export default function Home() {
             </div>
 
             <div className="growth-copy">
-              <p className="section-eyebrow" style={{ color: '#0f766e' }}>Growth services</p>
+              <p className="section-eyebrow" style={{ color: '#0f766e' }}>សេវាកម្ម</p>
               <h2 className="section-title">{'PN Digital \u1798\u17b6\u1793\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793\u1793\u17bc\u179c\u179f\u17c1\u179c\u17b6\u1780\u1798\u17d2\u1798\u1794\u17ca\u17bc\u179f\u1795\u17c1\u1780 \u1787\u17bd\u1799\u1787\u1798\u17d2\u179a\u17bb\u1789\u1780\u17b6\u179a\u179b\u1780\u17cb!'}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Boost your page, increase followers, improve engagement, and push more attention to your videos and live sessions.
@@ -265,9 +267,9 @@ export default function Home() {
               <h2 className="section-title">ហេតុអ្វីគួរជ្រើសរើសយក PN Digital?</h2>
               <div style={{ display: 'grid', gap: 18, marginTop: 28 }}>
                 {[
-                  ['គុណភាព', '\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799\u17b2\u17d2\u1799\u1785\u17c6\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793\u1782\u17c4\u179b\u178a\u17c5 \u178a\u17c6\u17a1\u17be\u1784\u1795\u17c1\u1780\u1792\u1798\u17d2\u1798\u178f\u17b6\u17b2\u17d2\u1799\u1791\u17c5\u1787\u17b6\u1794\u17ca\u17bc\u179f\u1796\u17c1\u179b\u17a1\u17b6\u1799\u1794\u17b6\u1793 \u1798\u17b6\u1793\u179b\u1780\u17cb\u1795\u17c1\u1780\u1794\u17ca\u17bc\u179f\u17a1\u17b6\u1799'],
-                  ['បទពិសោធន៍', 'TikTok, pages, and service offers each get a strategy that fits the buying moment.'],
-                  ['ទំនួលខុសត្រូវ', 'You get simple signals for reach, messages, customer interest, and next steps.']
+                  ['គុណភាព', 'ផេកល្អគុណភាពធានាជូនអតិថិជ​ន ធានាជូន១ខែ និងធានាថាជាFollowerខ្មែរសុទ្ធ100%'],
+                  ['បទពិសោធន៍', 'ក្រុមការងារមានបទពិសោធន៍ច្រើនឆ្នាំ និងមានតិចនិកប៊ូសច្បាស់លាស់ ចំគោលដៅ ជម្រុញការលក់របស់អាជីវករជាច្រើនអ្នក សុទ្ធតែជាបុគ្គលល្បីៗក្នុងវិស័យអាជីវកម្មOnline'],
+                  ['ទំនួលខុសត្រូវ', 'ឆ្លើយតបឆាប់រហ័ស តាមដានការឡាយរបស់ភ្ញៀវ ដោះស្រាយបញ្ហាបានភ្លាមៗ និងផ្ញើReportជូនភ្ញៀវជារៀងរាល់ថ្ងៃ']
                 ].map(([title, text]) => (
                   <div key={title} style={{ display: 'grid', gridTemplateColumns: '44px 1fr', gap: 14 }}>
                     <div style={{ width: 44, height: 44, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>
@@ -287,13 +289,10 @@ export default function Home() {
         <section className="section-pad" style={{ padding: '88px 40px', background: '#ffffff', borderTop: '1px solid #e5e7eb' }}>
           <div className="section-wrap">
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, alignItems: 'end', flexWrap: 'wrap', marginBottom: 30 }}>
-              <div style={{ maxWidth: 720 }}>
+              <div style={{ maxWidth: 1200 }}>
                 <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Client feedback</p>
-                <h2 className="section-title">{'\u179a\u17bc\u1794\u1797\u17b6\u1796\u179b\u1791\u17d2\u1792\u1795\u179b \u1793\u17b7\u1784 feedback \u1796\u17b8\u17a2\u178f\u17b7\u1790\u17b7\u1787\u1793.'}</h2>
+                <h2 className="section-title">{'រូបភាពពីការផ្ដល់់Feedbacksពីអតិថិជន និងការលក់ផ្សេងៗ'}</h2>
               </div>
-              <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', fontWeight: 900, textDecoration: 'none' }}>
-                Work with us <FaArrowRight />
-              </Link>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
@@ -345,14 +344,14 @@ export default function Home() {
           >
             <div>
               <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Ready to move</p>
-              <h2 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.08, fontWeight: 950 }}>Tell us what you sell. We will map the next campaign.</h2>
+              <h2 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.08, fontWeight: 950 }}>តើបងៗកំពុងតែចង់ចាប់ផ្ដើមអាជីវកម្មមែនទេ?  អាចប្រឹក្សាយោបល់ជាមួយPN Digitalបាន!</h2>
             </div>
             <Link
               to="/contact"
               className="action-link"
-              style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, textDecoration: 'none', background: '#101827', color: '#fff', padding: '15px 22px', borderRadius: 8, fontWeight: 900, whiteSpace: 'nowrap' }}
+              style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#000000', padding: '15px 22px', borderRadius: 8, fontWeight: 900, whiteSpace: 'nowrap' }}
             >
-              Contact PN Digital <FaArrowRight />
+              ទំនាក់ទំនងឥឡូវនេះ <FaArrowRight />
             </Link>
           </div>
         </section>

@@ -58,54 +58,6 @@ export default function About() {
       `}</style>
 
       <main>
-        <section
-          className="about-pad"
-          style={{
-            position: 'relative',
-            overflow: 'hidden',
-            padding: '86px 40px 72px',
-            backgroundImage: `linear-gradient(90deg, rgba(16,24,39,.86) 0%, rgba(16,24,39,.68) 48%, rgba(16,24,39,.34) 100%), url(${aboutHero})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        >
-          <div className="about-wrap">
-            <div style={{ maxWidth: 760, color: '#fff' }}>
-              <p className="about-eyebrow" style={{ color: '#5eead4' }}>About PN Digital</p>
-              <h1 className="about-title">ភ្នាក់ងារឌីជីថលសម្រាប់ជួយម្ចាស់អាជីវកម្មលក់ឲ្យចំអតិថិជន</h1>
-              <p style={{ margin: '24px 0 0', maxWidth: 680, color: '#dbeafe', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.8 }}>
-                Since 2023, PN Digital has helped business owners prepare stronger pages, boost campaigns, grow followers, and turn online attention into real customer conversations.
-              </p>
-            </div>
-
-            <div className="about-stat-grid">
-              {stats.map((stat) => (
-                <div key={stat.label} className="about-stat">
-                  <strong style={{ display: 'block', color: '#101827', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 950, lineHeight: 1 }}>{stat.value}</strong>
-                  <span style={{ display: 'block', marginTop: 8, color: '#4b5563', fontSize: 14, fontWeight: 800 }}>{stat.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="about-pad" style={{ padding: '82px 40px', background: '#ffffff' }}>
-          <div className="about-wrap about-grid">
-            <div>
-              <p className="about-eyebrow">Our story</p>
-              <h2 className="about-title" style={{ color: '#101827' }}>From page setup to campaign growth.</h2>
-              <p style={{ margin: '22px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>
-                Our work started with a simple problem: many sellers had products and offers, but their pages were not ready to build trust or reach the right buyers. PN Digital helps close that gap through page preparation, targeted boosting, follower growth, and campaign guidance.
-              </p>
-              <p style={{ margin: '18px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>
-                We focus on practical execution. Every campaign begins with the offer, audience, page condition, and expected customer action, then we adjust based on reach, engagement, and messages.
-              </p>
-            </div>
-
-            <div style={{ aspectRatio: '1 / 1', borderRadius: 8, overflow: 'hidden', background: `linear-gradient(180deg, rgba(16,24,39,0) 36%, rgba(16,24,39,.72) 100%), url(${pageList}) center / cover no-repeat`, boxShadow: '0 28px 74px rgba(17,24,39,.18)' }} />
-          </div>
-        </section>
-
         <section className="about-pad" style={{ padding: '82px 40px', background: '#f6f7fb' }}>
           <div className="about-wrap about-grid">
             <div className="about-card" style={{ padding: 28 }}>

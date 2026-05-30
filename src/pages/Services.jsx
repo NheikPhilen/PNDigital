@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaBullhorn, FaChartLine, FaCheck, FaLayerGroup, FaPlay, FaShieldHalved } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
-import serviceHero from '../../assets/images/HeroBanner.jpg'
 import pageVip from '../../assets/images/product/PageVIP.jpg'
 import feedback from '../../assets/images/product/Feedback.jpg'
 import client from '../../assets/images/product/Client.jpg'
@@ -11,34 +10,28 @@ export default function Services() {
   const services = [
     {
       title: 'សេវាកម្មប៊ូស',
-      subtitle: 'Page and live boost support',
+      subtitle: 'សេវាកម្មBoost Post /Live/TikTok',
       icon: <FaBullhorn />,
       image: pageVip,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
-      features: ['Target audience setup', 'Live boost preparation', 'Post and video campaign support', 'Campaign report and next steps']
+      features: ['សម្រាប់បូសFacebook Free Page 2k', 'Free \u1794\u17ca\u17bc\u179f video \u1793\u17b7\u1784 post \u1798\u17b7\u1793\u1780\u17c6\u178e\u178f\u17cb\u1796\u17c1\u1789\u17e1\u1781\u17c2', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
     },
     {
       title: 'លក់ផេកខ្មែរ',
-      subtitle: 'Page selling and setup',
+      subtitle: 'ផេកខ្មែរធម្មតា & ផេក​VIPប៊ូសឡាយ',
       icon: <FaLayerGroup />,
       image: client,
       description: 'Ready page options and setup support for sellers that need stronger trust, followers, and page quality.',
-      features: ['Khmer follower page options', 'Cover and profile setup', 'Page name support', 'Boost-ready page guidance']
+      features: ['Free design cover page', '\u1794\u17d2\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7\u1795\u17c1\u1780', '\u1792\u17b6\u1793\u17b6\u1787\u17bc\u1793\u179a\u1799\u17c8\u1796\u17c1\u179b\u17e1\u1781\u17c2', 'free \u1794\u17ca\u17bc\u179f\u179a\u1799\u17c8\u1796\u17c1\u179b\u17e1\u17e5\u1790\u17d2\u1784\u17c3']
     },
     {
       title: 'លក់ TikTok',
-      subtitle: 'Follower and content growth',
+      subtitle: 'អាចកម្មង់Contentបាន',
       icon: <SiTiktok />,
       image: feedback,
       description: 'TikTok follower packages and campaign guidance for creators, sellers, and service brands.',
-      features: ['Follower packages from 1k to 500k', 'Cambodian follower support', 'Account name guidance', 'Content direction for growth']
+      features: ['\u1798\u17b6\u1793\u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k', '\u1792\u17b6\u1793\u17b6 follower\u1781\u17d2\u1798\u17c2\u179a', 'Free\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7']
     }
-  ]
-
-  const process = [
-    { title: 'Review', text: 'We check your page, offer, target audience, and current digital setup.' },
-    { title: 'Prepare', text: 'We improve the setup, choose the right service path, and clarify campaign requirements.' },
-    { title: 'Launch', text: 'We run the service, monitor results, and share simple next steps.' }
   ]
 
   return (
@@ -61,43 +54,20 @@ export default function Services() {
       `}</style>
 
       <main>
-        <section
-          className="services-pad"
-          style={{
-            backgroundImage: `linear-gradient(90deg, rgba(16,24,39,.88) 0%, rgba(16,24,39,.68) 56%, rgba(16,24,39,.34) 100%), url(${serviceHero})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        >
-          <div className="services-wrap" style={{ color: '#fff' }}>
-            <p className="services-eyebrow">PN Digital services</p>
-            <h1 className="services-title">សេវាកម្មសម្រាប់ជួយអាជីវកម្មលក់បានចំគោលដៅ</h1>
-            <p style={{ margin: '22px 0 0', maxWidth: 700, color: '#dbeafe', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.8 }}>
-              Choose page boosting, page selling, TikTok growth, or campaign support. Each service is prepared around your audience, offer, and expected customer action.
-            </p>
-            <Link to="/contact" style={{ marginTop: 30, display: 'inline-flex', alignItems: 'center', gap: 10, color: '#101827', background: '#fdaf06', padding: '14px 18px', borderRadius: 8, fontWeight: 900, textDecoration: 'none' }}>
-              Request service <FaArrowRight />
-            </Link>
-          </div>
-        </section>
-
         <section className="services-pad" style={{ background: '#ffffff' }}>
           <div className="services-wrap">
-            <div style={{ maxWidth: 760, marginBottom: 32 }}>
+            <div style={{ maxWidth: 900, marginBottom: 32 }}>
               <p className="services-eyebrow" style={{ color: '#0f766e' }}>Service details</p>
-              <h2 className="services-title" style={{ color: '#101827' }}>What we can help with.</h2>
+              <h2 className="services-title" style={{ color: '#101827' }}>PN Digital មានសេវាកម្មដូចជា៖</h2>
             </div>
 
             <div className="services-grid">
-              {services.map((service) => (
+              {services.map((service, index) => (
                 <article key={service.title} className="service-card">
                   <div className="service-image" style={{ backgroundImage: `linear-gradient(180deg, rgba(16,24,39,0) 32%, rgba(16,24,39,.78) 100%), url(${service.image})` }} />
                   <div style={{ padding: 26 }}>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 14, marginTop: -54, marginBottom: 22 }}>
                       <div className="service-icon">{service.icon}</div>
-                      <span style={{ background: '#fffbeb', color: '#9a5b00', border: '1px solid #fde68a', borderRadius: 8, padding: '8px 10px', fontSize: 12, fontWeight: 950, textTransform: 'uppercase' }}>
-                        Detail
-                      </span>
                     </div>
                     <h3 style={{ margin: '0 0 6px', fontSize: 28, fontWeight: 950 }}>{service.title}</h3>
                     <p style={{ margin: '0 0 14px', color: '#9a5b00', fontWeight: 900 }}>{service.subtitle}</p>
@@ -112,36 +82,10 @@ export default function Services() {
                         </span>
                       ))}
                     </div>
-                    <Link to="/contact" style={{ marginTop: 24, display: 'inline-flex', alignItems: 'center', gap: 10, color: '#101827', fontWeight: 950, textDecoration: 'none' }}>
-                      Ask about this service <FaArrowRight />
+                    <Link to={`/services/detail${index + 1}`} style={{ marginTop: 22, display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', background: '#fdaf06', padding: '9px 12px', borderRadius: 8, fontSize: 13, fontWeight: 900, textDecoration: 'none' }}>
+                      មើលព័ត៌មានលម្អិត <FaArrowRight />
                     </Link>
                   </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="services-pad" style={{ background: '#f6f7fb' }}>
-          <div className="services-wrap detail-grid">
-            <div>
-              <p className="services-eyebrow" style={{ color: '#9a5b00' }}>Process</p>
-              <h2 className="services-title">Simple steps from request to launch.</h2>
-              <p style={{ margin: '22px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>
-                Every service starts with the business goal. We check whether the page, audience, and offer are ready before recommending the right growth path.
-              </p>
-            </div>
-
-            <div style={{ display: 'grid', gap: 16 }}>
-              {process.map((item, index) => (
-                <article key={item.title} style={{ display: 'grid', gridTemplateColumns: '52px 1fr', gap: 16, padding: 22, borderRadius: 8, background: '#fff', border: '1px solid #e5e7eb', boxShadow: '0 16px 42px rgba(17,24,39,.08)' }}>
-                  <span style={{ width: 52, height: 52, borderRadius: 8, background: '#101827', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, fontWeight: 950 }}>
-                    {index + 1}
-                  </span>
-                  <span>
-                    <h3 style={{ margin: '0 0 8px', fontSize: 22, fontWeight: 950 }}>{item.title}</h3>
-                    <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.75 }}>{item.text}</p>
-                  </span>
                 </article>
               ))}
             </div>

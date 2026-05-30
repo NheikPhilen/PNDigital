@@ -8,6 +8,7 @@ import CartPage from './pages/cart'
 import Checkout from './pages/Checkout'
 import OrderConfirmation from './pages/OrderConfirmation'
 import Orders from './pages/Orders'
+import ServiceDetail from './pages/ServiceDetail'
 import SiteHeader from './components/SiteHeader'
 import promotionImage from '../assets/images/promotion.jpg'
 
@@ -48,6 +49,7 @@ export default function App(){
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/services" element={<Services/>} />
+        <Route path="/services/:detailId" element={<ServiceDetail/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/cart" element={<CartPage/>} />
         <Route path="/checkout" element={<Checkout/>} />

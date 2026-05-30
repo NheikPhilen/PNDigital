@@ -11,10 +11,9 @@ export default function SiteHeader() {
 
   const navLinks = [
     { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/services', label: 'Services' },
-    { to: '/cart', label: 'Cart' },
-    { to: '/contact', label: 'Contact', cta: true }
+    { to: '/about', label: 'អំពីយើង' },
+    { to: '/services', label: 'សេវាកម្ម' },
+    { to: '/contact', label: 'Contact Us', cta: true }
   ]
 
   useEffect(() => {
