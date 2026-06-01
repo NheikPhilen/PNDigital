@@ -8,8 +8,8 @@ import client from '../../assets/images/product/Client.jpg'
 
 const serviceDetails = {
   detail1: {
-    title: 'សេវាកម្មប៊ូស',
-    subtitle: 'សេវាកម្ម Boost Post / Live / TikTok',
+    title: 'សេវាកម្មប៊ូស Post',
+    subtitle: 'សេវាកម្ម Boost',
     icon: <FaBullhorn />,
     image: pageVip,
     description: 'Note: ផេកធម្មតាសម្រាប់Postលក់អាចប៊ូសបាន តែមិនអាចLiveបាន | ផេកVIPប៊ូសឡាយអាចប៊ូសនិងLiveបាន',
@@ -22,6 +22,32 @@ const serviceDetails = {
     ]
   },
   detail2: {
+    title: 'សេវាកម្មប៊ូស Live',
+    subtitle: 'សេវាកម្ម Boost',
+    icon: <FaBullhorn />,
+    image: pageVip,
+    description: 'សេវាកម្មសម្រាប់ជួយប៊ូស Live ឱ្យទៅដល់អតិថិជនគោលដៅ និងបង្កើនការមើល ការឆ្លើយតប និងការទិញ។',
+    points: [
+      'សម្រាប់ប៊ូស Facebook Live',
+      'តាមដានការប៊ូសអំឡុងពេល Live',
+      'ជួយពិនិត្យ audience និង campaign setup',
+      'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ'
+    ]
+  },
+  detail3: {
+    title: 'សេវាកម្មប៊ូស Tik Tok',
+    subtitle: 'សេវាកម្ម Boost',
+    icon: <FaBullhorn />,
+    image: pageVip,
+    description: 'សេវាកម្មជួយប៊ូស TikTok content ដើម្បីបង្កើន reach, view និង engagement សម្រាប់អាជីវកម្ម ឬ creator។',
+    points: [
+      'សម្រាប់ប៊ូស TikTok video',
+      'ជួយជ្រើស audience ឱ្យត្រូវគោលដៅ',
+      'តាមដានលទ្ធផល campaign',
+      'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ'
+    ]
+  },
+  detail4: {
     title: 'លក់ផេកខ្មែរ',
     subtitle: 'ផេកខ្មែរធម្មតា និងផេក VIP ប៊ូសឡាយ',
     icon: <FaLayerGroup />,
@@ -32,7 +58,20 @@ const serviceDetails = {
       'Free ប៊ូសរយៈពេល 15 ថ្ងៃ'
     ]
   },
-  detail3: {
+  detail5: {
+    title: 'លក់ផេកខ្មែរ',
+    subtitle: 'ផេកខ្មែរធម្មតា និងផេក VIP ប៊ូសឡាយ',
+    icon: <FaLayerGroup />,
+    image: client,
+    description: 'ជម្រើសផេកខ្មែរសម្រាប់អាជីវកម្មដែលចង់បានផេករួចរាល់ មានភាពជឿជាក់ និងអាចប្រើសម្រាប់លក់ឬប៊ូសបាន។',
+    points: [
+      'Free design cover page',
+      'ប្តូរឈ្មោះផេក',
+      'ធានាជូនរយៈពេល 1 ខែ',
+      'Free ប៊ូសរយៈពេល 15 ថ្ងៃ'
+    ]
+  },
+  detail6: {
     title: 'លក់ TikTok',
     subtitle: 'អាចកម្មង់ Content បាន',
     icon: <SiTiktok />,
