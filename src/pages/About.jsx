@@ -73,21 +73,9 @@ export default function About() {
                 ))}
               </div>
             </div>
-
-            <div>
-              <p className="about-eyebrow" style={{ color: '#9a5b00' }}>That is how we grow.</p>
-              <h2 className="about-title">Clear process, real support, better customer response.</h2>
-              <p style={{ margin: '22px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>
-                We do not treat every page the same. A page selling products, a service business, and a live seller each need a different message, target audience, and boost setup.
-              </p>
-            </div>
           </div>
         </section>
       </main>
-
-      <footer style={{ background: '#0b1020', color: '#fff', padding: '30px 40px', textAlign: 'center' }}>
-        <p style={{ margin: 0, color: '#cbd5e1' }}>© 2026 PN Digital. Helping business owners grow online since 2023.</p>
-      </footer>
     </div>
   )
 }
