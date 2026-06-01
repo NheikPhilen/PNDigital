@@ -184,15 +184,6 @@ export default function Contact() {
             </form>
           </div>
         </section>
-
-        <section className="contact-pad" style={{ paddingTop: 0 }}>
-          <div className="contact-wrap contact-cta" style={{ padding: 30, borderRadius: 8, background: 'linear-gradient(135deg, #fff7ed 0%, #eef6ff 100%)', border: '1px solid #e5e7eb' }}>
-            <h2 style={{ margin: 0, fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.12, fontWeight: 950 }}>Need service details before sending?</h2>
-            <Link to="/services" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, color: '#101827', background: '#fdaf06', padding: '14px 18px', borderRadius: 8, fontWeight: 900, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-              View services <FaArrowRight />
-            </Link>
-          </div>
-        </section>
       </main>
 
       <footer style={{ background: '#0b1020', color: '#fff', padding: '30px 40px', textAlign: 'center' }}>

@@ -14,7 +14,7 @@ export default function Services() {
       icon: <FaBullhorn />,
       image: pageVip,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
-      features: ['អាចប៊ូសជារូបភាព រឺVideo', 'ការប៊៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
+      features: ['អាចប៊ូសជារូបភាព រឺVideo', 'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
     },
     {
       title: 'សេវាកម្មប៊ូស Live',
@@ -22,7 +22,7 @@ export default function Services() {
       icon: <FaBullhorn />,
       image: pageVip,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
-      features: ['Free Page 2k','អាចLiveម៉ោងណាក៏បានអាស្រ័យលើភ្ញៀវ', 'ការប៊៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
+      features: ['Free Page 2k', 'អាចLiveម៉ោងណាក៏បានអាស្រ័យលើភ្ញៀវ', 'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
     },
     {
       title: 'សេវាកម្មប៊ូស Tik Tok',
@@ -30,7 +30,7 @@ export default function Services() {
       icon: <FaBullhorn />,
       image: pageVip,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
-      features: ['រៀបចំCaption និងCaptionសម្រាប់Post','អាចប៊ូសម្ដង1Videoរឺច្រើនវីដេអូ(Compaign)', 'ការប៊៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
+      features: ['រៀបចំCaption និងCaptionសម្រាប់Post', 'អាចប៊ូសម្ដង1Videoរឺច្រើនវីដេអូ(Compaign)', 'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', '\u1795\u17d2\u178a\u179b\u17cb\u1787\u17bc\u1793 report \u1787\u17b6\u179a\u17c0\u1784\u179a\u17b6\u179b\u17cb\u1790\u17d2\u1784\u17c3']
     },
     {
       title: 'លក់ផេកខ្មែរ',
@@ -119,12 +119,11 @@ export default function Services() {
             </div>
           </div>
         </section>
-
         <section className="services-pad" style={{ background: '#ffffff' }}>
           <div className="services-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto', gap: 24, alignItems: 'center', padding: 32, borderRadius: 8, background: 'linear-gradient(135deg, #fff7ed 0%, #eef6ff 100%)', border: '1px solid #e5e7eb' }}>
-            <h2 style={{ margin: 0, fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.12, fontWeight: 950 }}>Ready to choose the right service?</h2>
+            <h2 style={{ margin: 0, fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.12, fontWeight: 950 }}>បងៗពេញចិត្តសេវាកម្មមួយណាអាចពិភាក្សាតាមរយៈ</h2>
             <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, color: '#fff', background: '#101827', padding: '14px 18px', borderRadius: 8, fontWeight: 900, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-              Send request <FaArrowRight />
+              Telegram
             </Link>
           </div>
         </section>

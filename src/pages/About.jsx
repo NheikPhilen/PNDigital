@@ -14,18 +14,17 @@ export default function About() {
   const workStory = [
     {
       year: '2023',
-      title: 'Started with page growth',
-      text: 'PN Digital began by helping sellers prepare stronger Facebook pages, improve trust signals, and reach the right customers.'
+      title: 'ផ្ដើមពីអ្នកបង្ហើតPageលក់អោយAgency',
+      text: 'PN Digital began with building page for sale to agencies.'
     },
     {
       year: '2024',
-      title: 'Built live boost support',
-      text: 'The work expanded into Live Boosting, page setup, follower growth, and practical campaign support for daily sellers.'
-    },
+      title: 'ចាប់ផ្ដើមបង្កើតផេកលក់ខ្លួនឯងនិងមានភ្ញៀវក្នុងដៃច្រើនជាងមុន',
+      text: 'Start growing to sale pages to agencie and have more clients'}, 
     {
-      year: 'Now',
-      title: 'Focused on measurable sales action',
-      text: 'Today we support business owners with clearer offers, better page positioning, campaign reporting, and faster customer response.'
+      year: 'Now ',
+      title: 'ក្លាយជាAgencyខ្លួនឯង និងមានភ្ញៀវជាច្រើនក្នុងដៃ ទទួលបានការទុកចិត្តជាច្រើនពីអាជីវករOnline',
+      text: 'Today I become an agency myself and have a lot of clients. Especially, I got trusted by many famouse online seller in Cambodia.'
     }
   ]
 
@@ -76,37 +75,11 @@ export default function About() {
             </div>
 
             <div>
-              <p className="about-eyebrow" style={{ color: '#9a5b00' }}>How we work</p>
+              <p className="about-eyebrow" style={{ color: '#9a5b00' }}>That is how we grow.</p>
               <h2 className="about-title">Clear process, real support, better customer response.</h2>
               <p style={{ margin: '22px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>
                 We do not treat every page the same. A page selling products, a service business, and a live seller each need a different message, target audience, and boost setup.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="about-pad" style={{ padding: '82px 40px', background: '#101827', color: '#fff' }}>
-          <div className="about-wrap">
-            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, alignItems: 'end', flexWrap: 'wrap', marginBottom: 30 }}>
-              <div style={{ maxWidth: 720 }}>
-                <p className="about-eyebrow" style={{ color: '#5eead4' }}>Why clients choose us</p>
-                <h2 className="about-title">A partner for daily digital growth.</h2>
-              </div>
-              <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, color: '#101827', background: '#fdaf06', padding: '14px 18px', borderRadius: 8, fontWeight: 900, textDecoration: 'none' }}>
-                Contact us <FaArrowRight />
-              </Link>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 18 }}>
-              {strengths.map((item) => (
-                <article key={item.title} style={{ padding: 26, borderRadius: 8, border: '1px solid rgba(255,255,255,.14)', background: 'rgba(255,255,255,.06)' }}>
-                  <div style={{ width: 48, height: 48, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, marginBottom: 18 }}>
-                    {item.icon}
-                  </div>
-                  <h3 style={{ margin: '0 0 10px', fontSize: 21, fontWeight: 950 }}>{item.title}</h3>
-                  <p style={{ margin: 0, color: '#cbd5e1', lineHeight: 1.75 }}>{item.text}</p>
-                </article>
-              ))}
             </div>
           </div>
         </section>
