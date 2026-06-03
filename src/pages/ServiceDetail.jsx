@@ -9,79 +9,77 @@ import client from '../../assets/images/product/Client.jpg'
 const serviceDetails = {
   detail1: {
     title: 'សេវាកម្មប៊ូស Post',
-    subtitle: 'សេវាកម្ម Boost',
+    subtitle: 'សេវាកម្មBoost',
     icon: <FaBullhorn />,
     image: pageVip,
-    description: 'Note: ផេកធម្មតាសម្រាប់Postលក់អាចប៊ូសបាន តែមិនអាចLiveបាន | ផេកVIPប៊ូសឡាយអាចប៊ូសនិងLiveបាន',
+    description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
     points: [
-      'បងៗមានផេកស្រាប់ក៏អាចប៊ូសបាន',
-      'ប៊ូស video និង post មិនកំណត់ពេញ 1 ខែ',
-      'តាមដានការLive រឺការប៊ូសរបស់ភ្ញៀវ',
-      'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ',
-      'ជួយពិនិត្យ audience និង campaign setup'
+      'អាចប៊ូសជារូបភាព រឺVideo',
+      'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ',
+      'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ'
     ]
   },
   detail2: {
     title: 'សេវាកម្មប៊ូស Live',
-    subtitle: 'សេវាកម្ម Boost',
+    subtitle: 'សេវាកម្មBoost',
     icon: <FaBullhorn />,
     image: pageVip,
-    description: 'សេវាកម្មសម្រាប់ជួយប៊ូស Live ឱ្យទៅដល់អតិថិជនគោលដៅ និងបង្កើនការមើល ការឆ្លើយតប និងការទិញ។',
+    description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
     points: [
-      'សម្រាប់ប៊ូស Facebook Live',
-      'តាមដានការប៊ូសអំឡុងពេល Live',
-      'ជួយពិនិត្យ audience និង campaign setup',
+      'Free Page 2k',
+      'អាចLiveម៉ោងណាក៏បានអាស្រ័យលើភ្ញៀវ',
+      'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ',
       'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ'
     ]
   },
   detail3: {
     title: 'សេវាកម្មប៊ូស Tik Tok',
-    subtitle: 'សេវាកម្ម Boost',
+    subtitle: 'សេវាកម្មBoost',
     icon: <FaBullhorn />,
     image: pageVip,
-    description: 'សេវាកម្មជួយប៊ូស TikTok content ដើម្បីបង្កើន reach, view និង engagement សម្រាប់អាជីវកម្ម ឬ creator។',
+    description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
     points: [
-      'សម្រាប់ប៊ូស TikTok video',
-      'ជួយជ្រើស audience ឱ្យត្រូវគោលដៅ',
-      'តាមដានលទ្ធផល campaign',
+      'រៀបចំCaption និងCaptionសម្រាប់Post',
+      'អាចប៊ូសម្ដង1Videoរឺច្រើនវីដេអូ(Compaign)',
+      'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ',
       'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ'
     ]
   },
   detail4: {
     title: 'លក់ផេកខ្មែរ',
-    subtitle: 'ផេកខ្មែរធម្មតា និងផេក VIP ប៊ូសឡាយ',
+    subtitle: 'ផេកខ្មែរធម្មតា & ផេក​VIPប៊ូសឡាយ',
     icon: <FaLayerGroup />,
     image: client,
-    description: 'ផ្ដល់ជម្រើសផេកសម្រាប់អាជីវកម្មដែលចង់បានផេកមានទំនុកចិត្ត និងរួចរាល់សម្រាប់លក់ឬប៊ូស។',
+    description: 'Ready page options and setup support for sellers that need stronger trust, followers, and page quality.',
     points: [
-      'ធានាជូនរយៈពេល 1 ខែ',
-      'Free ប៊ូសរយៈពេល 15 ថ្ងៃ'
+      'Free design cover page',
+      'ប្ដូរឈ្មោះផេក',
+      'ធានាជូនរយៈពេល១ខែ',
+      'free ប៊ូសរយៈពេល១៥ថ្ងៃ'
     ]
   },
   detail5: {
-    title: 'លក់ផេកខ្មែរ',
-    subtitle: 'ផេកខ្មែរធម្មតា និងផេក VIP ប៊ូសឡាយ',
+    title: 'លក់ Instagram ',
+    subtitle: 'ផេកខ្មែរធម្មតា & ផេក​VIPប៊ូសឡាយ',
     icon: <FaLayerGroup />,
     image: client,
-    description: 'ជម្រើសផេកខ្មែរសម្រាប់អាជីវកម្មដែលចង់បានផេករួចរាល់ មានភាពជឿជាក់ និងអាចប្រើសម្រាប់លក់ឬប៊ូសបាន។',
+    description: 'Ready page options and setup support for sellers that need stronger trust, followers, and page quality.',
     points: [
-      'Free design cover page',
-      'ប្តូរឈ្មោះផេក',
-      'ធានាជូនរយៈពេល 1 ខែ',
-      'Free ប៊ូសរយៈពេល 15 ថ្ងៃ'
+      'មានចាប់ពី 1k-500k',
+      'ធានា followerខ្មែរ',
+      'Freeដូរឈ្មោះ'
     ]
   },
   detail6: {
     title: 'លក់ TikTok',
-    subtitle: 'អាចកម្មង់ Content បាន',
+    subtitle: 'អាចកម្មង់Contentបាន',
     icon: <SiTiktok />,
     image: feedback,
-    description: 'សេវាកម្មសម្រាប់ TikTok follower និងការរៀបចំមាតិកា ដើម្បីជួយគណនីមើលទៅមានសកម្មភាព និងទាក់ទាញជាងមុន។',
+    description: 'TikTok follower packages and campaign guidance for creators, sellers, and service brands.',
     points: [
       'មានចាប់ពី 1k-500k',
-      'ធានា follower ខ្មែរ',
-      'Free ដូរឈ្មោះ',
-      'អាចពិភាក្សា content direction សម្រាប់ growth'
+      'ធានា followerខ្មែរ',
+      'Freeដូរឈ្មោះ'
     ]
   }
 }

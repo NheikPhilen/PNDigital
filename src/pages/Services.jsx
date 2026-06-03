@@ -66,7 +66,7 @@ export default function Services() {
         .services-eyebrow { margin: 0 0 12px; color: #5eead4; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.4px; }
         .services-title { margin: 0; font-size: clamp(34px, 5vw, 62px); line-height: 1.06; font-weight: 950; letter-spacing: 0; }
         .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
-        .service-card { overflow: hidden; display: flex; flex-direction: column; min-height: 100%; border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; box-shadow: 0 18px 48px rgba(17,24,39,.08); transition: transform .2s ease, box-shadow .2s ease; }
+        .service-card { overflow: hidden; display: flex; flex-direction: column; min-height: 100%; border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; box-shadow: 0 18px 48px rgba(17,24,39,.08); transition: transform .2s ease, box-shadow .2s ease; color: inherit; text-decoration: none; cursor: pointer; }
         .service-card:hover { transform: translateY(-5px); box-shadow: 0 24px 68px rgba(17,24,39,.13); }
         .service-image { min-height: 260px; background-size: cover; background-position: center; flex: 0 0 auto; }
         .service-content { display: flex; flex: 1; flex-direction: column; padding: 26px; }
@@ -91,7 +91,7 @@ export default function Services() {
 
             <div className="services-grid">
               {services.map((service, index) => (
-                <article key={`${service.title}-${index}`} className="service-card">
+                <Link key={`${service.title}-${index}`} to={`/services/detail${index + 1}`} className="service-card">
                   <div className="service-image" style={{ backgroundImage: `linear-gradient(180deg, rgba(16,24,39,0) 32%, rgba(16,24,39,.78) 100%), url(${service.image})` }} />
                   <div className="service-content">
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 14, marginTop: -54, marginBottom: 22 }}>
@@ -110,11 +110,11 @@ export default function Services() {
                         </span>
                       ))}
                     </div>
-                    <Link to={`/services/detail${index + 1}`} className="service-detail-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', background: '#fdaf06', padding: '9px 12px', borderRadius: 8, fontSize: 13, fontWeight: 900, textDecoration: 'none' }}>
+                    <span className="service-detail-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', background: '#fdaf06', padding: '9px 12px', borderRadius: 8, fontSize: 13, fontWeight: 900, textDecoration: 'none' }}>
                       មើលព័ត៌មានលម្អិត <FaArrowRight />
-                    </Link>
+                    </span>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>

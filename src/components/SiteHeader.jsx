@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { FaArrowRight, FaBars, FaXmark } from 'react-icons/fa6'
+import { FaArrowRight, FaBars, FaXmark,FaHouse } from 'react-icons/fa6'
 import logo from '../../assets/images/logo.png'
 
 export default function SiteHeader() {
@@ -10,7 +10,7 @@ export default function SiteHeader() {
   const closeMenu = () => setIsMenuOpen(false)
 
   const navLinks = [
-    { to: '/', label: 'Home' },
+    { to: '/', label: 'ទំព័រដើម' },
     { to: '/about', label: 'អំពីយើង' },
     { to: '/services', label: 'សេវាកម្ម' },
     { to: '/contact', label: 'Contact Us', cta: true }

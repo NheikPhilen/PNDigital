@@ -5,7 +5,9 @@ import {
   FaBullhorn,
   FaChartLine,
   FaCheck,
+  FaFacebookF,
   FaLayerGroup,
+  FaHouse,
   FaTelegram
 } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
@@ -23,7 +25,7 @@ export default function Home() {
       title: 'សេវាកម្មប៊ូស Post',
       subtitle: 'សេវាកម្មBoost',
       label: 'សេវាកម្មBoost',
-      icon: <FaBullhorn />,
+      icon:<FaFacebookF />,
       image: promotionImage,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
       features: ['អាចប៊ូសជារូបភាព រឺVideo', 'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', 'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ']
@@ -32,7 +34,7 @@ export default function Home() {
       title: 'សេវាកម្មប៊ូស Live',
       subtitle: 'សេវាកម្មBoost',
       label: 'សេវាកម្មBoost',
-      icon: <FaBullhorn />,
+      icon: <FaFacebookF />,
       image: promotionImage,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
       features: ['Free Page 2k', 'អាចLiveម៉ោងណាក៏បានអាស្រ័យលើភ្ញៀវ', 'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', 'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ']
@@ -41,7 +43,7 @@ export default function Home() {
       title: 'សេវាកម្មប៊ូស Tik Tok',
       subtitle: 'សេវាកម្មBoost',
       label: 'សេវាកម្មBoost',
-      icon: <FaBullhorn />,
+      icon: <SiTiktok />,
       image: promotionImage,
       description: 'Boost posts, videos, and live sessions to reach the right audience and create more customer messages.',
       features: ['រៀបចំCaption និងCaptionសម្រាប់Post', 'អាចប៊ូសម្ដង1Videoរឺច្រើនវីដេអូ(Compaign)', 'ការប៊ូសមិនមានកំណត់ចំនួនពេញ១ខែ', 'ផ្ដល់ជូន report ជារៀងរាល់ថ្ងៃ']
@@ -50,7 +52,7 @@ export default function Home() {
       title: 'លក់ផេកខ្មែរ',
       subtitle: 'ផេកខ្មែរធម្មតា & ផេក​VIPប៊ូសឡាយ',
       label: 'លក់ផេកខ្មែរ',
-      icon: <FaLayerGroup />,
+      icon: <FaFacebookF />,
       image: client,
       description: 'Ready page options and setup support for sellers that need stronger trust, followers, and page quality.',
       features: ['Free design cover page', 'ប្ដូរឈ្មោះផេក', 'ធានាជូនរយៈពេល១ខែ', 'free ប៊ូសរយៈពេល១៥ថ្ងៃ']
@@ -166,7 +168,7 @@ export default function Home() {
           <div className="section-wrap" style={{ width: '100%' }}>
             <div className="hero-content">
               <p style={{ margin: '0 0 18px', color: '#9a5b00', fontSize: 13, fontWeight: 900, textTransform: 'uppercase', letterSpacing: 1.8 }}>
-                Digital growth studio
+                PN Digital
               </p>
               <h1 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.18, fontWeight: 950, letterSpacing: 0 }}>
                 ភ្នាក់ងារជួយជម្រុញការលក់របស់ម្ចាស់អាជីវកម្មឲ្យចំអតិថិជនគោលដៅ!
@@ -178,7 +180,7 @@ export default function Home() {
                 <Link
                   to="/services"
                   className="action-link"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#101827', padding: '14px 20px', borderRadius: 8, fontWeight: 900 }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#000000', padding: '14px 20px', borderRadius: 8, fontWeight: 900 }}
                 >
                   មើលសេវាកម្ម <FaArrowRight />
                 </Link>
@@ -211,9 +213,10 @@ export default function Home() {
 
             {/* Changed from auto-fit to forced 3 columns layout via class */}
             <div className="three-col-grid">
-              {coreServices.map((service) => (
-                <article
+              {coreServices.map((service, index) => (
+                <Link
                   key={service.title}
+                  to={`/services/detail${index + 1}`}
                   className="service-card"
                   style={{
                     overflow: 'hidden',
@@ -224,7 +227,10 @@ export default function Home() {
                     minHeight: 360,
                     display: 'flex',
                     flexDirection: 'column',
-                    boxShadow: '0 16px 38px rgba(17,24,39,.08)'
+                    boxShadow: '0 16px 38px rgba(17,24,39,.08)',
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    cursor: 'pointer'
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginBottom: 28 }}>
@@ -247,7 +253,10 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                </article>
+                  <span style={{ marginTop: 22, alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', background: '#fdaf06', padding: '9px 12px', borderRadius: 8, fontSize: 13, fontWeight: 900, textDecoration: 'none' }}>
+                    មើលព័ត៌មានលម្អិត <FaArrowRight />
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -432,7 +441,7 @@ export default function Home() {
         <div className="section-wrap">
           <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'minmax(240px, 1.4fr) repeat(3, minmax(140px, 1fr))', gap: 30 }}>
             <div>
-              <img src={logo2} alt="PN Digital" style={{ height: 54, width: 'auto', display: 'block', objectFit: 'contain', marginBottom: 16 }} />
+              <img src={logo2} alt="PN Digital" style={{ height: 120, width: 'auto', display: 'block', objectFit: 'contain', marginBottom: 16 }} />
               <p style={{ margin: 0, color: '#cbd5e1', lineHeight: 1.7, maxWidth: 360 }}>
                 Digital growth services for sellers, creators, and service brands that want clearer campaigns and better customer response.
               </p>
@@ -445,17 +454,38 @@ export default function Home() {
             </div>
             <div>
               <h4 style={{ margin: '0 0 14px', color: '#fdaf06', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1 }}>Company</h4>
-              <Link to="/about" style={{ display: 'block', color: '#cbd5e1', textDecoration: 'none', marginBottom: 10 }}>About</Link>
+              <Link to="/about" style={{ display: 'block', color: '#cbd5e1', textDecoration: 'none', marginBottom: 10 }}>អំពីយើង</Link>
               <Link to="/contact" style={{ display: 'block', color: '#cbd5e1', textDecoration: 'none' }}>Contact</Link>
             </div>
             <div>
               <h4 style={{ margin: '0 0 14px', color: '#fdaf06', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1 }}>Contact</h4>
-              <p style={{ margin: '0 0 10px', color: '#cbd5e1' }}>0979777420</p>
-              <p style={{ margin: 0, color: '#cbd5e1' }}>Page: PN Digital</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <a
+                  href="https://t.me/PhaNet0903"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Telegram"
+                  title="Telegram"
+                  style={{ width: 42, height: 42, borderRadius: 8, background: '#008bde', color: '#fff', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, textDecoration: 'none' }}
+                >
+                  <FaTelegram />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61569384341081"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  title="Facebook"
+                  style={{ width: 42, height: 42, borderRadius: 8, background: '#1877f2', color: '#fff', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, textDecoration: 'none' }}
+                >
+                  <FaFacebookF />
+                </a>
+              </div>
             </div>
           </div>
           <div style={{ marginTop: 34, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,.12)', color: '#94a3b8', fontSize: 14 }}>
-            <p style={{ margin: 0 }}>© 2026 PN Digital. All rights reserved.</p>
+            <p style={{ margin: 0 }}>© 2026 PN Digital. 
+              All rights reserved.</p>
           </div>
         </div>
       </footer>
