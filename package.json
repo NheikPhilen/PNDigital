@@ -11,10 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
-<<<<<<< HEAD
     "aos": "^2.3.4",
-=======
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
     "daisyui": "^5.1.8",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

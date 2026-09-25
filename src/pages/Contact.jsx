@@ -18,11 +18,7 @@ export default function Contact() {
   const contactInfo = [
     { icon: <FaPhone />, label: 'Phone', value: '0979777420', href: 'tel:0979777420' },
     { icon: <FaTelegram />, label: 'Telegram', value: '@PhaNet0903', href: 'https://t.me/PhaNet0903' },
-<<<<<<< HEAD
-    { icon: <FaFacebookF />, label: 'Facebook Page', value: 'PN Digital', href: 'https://web.facebook.com/profile.php?id=61569384341081' }
-=======
     { icon: <FaFacebookF />, label: 'Facebook Page', value: 'PN Digital', href: 'https://www.facebook.com/profile.php?id=61569384341081' }
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
   ]
 
   const handleInputChange = (event) => {

@@ -59,7 +59,6 @@ textarea {
   --light-yellow: #fef5e7;
 }
 
-<<<<<<< HEAD
 /* Shared AOS scroll reveals. The extra slide variants complement AOS's built-ins. */
 [data-aos="slide-in"] {
   opacity: 0;
@@ -79,8 +78,6 @@ textarea {
   transform: translateX(0);
 }
 
-=======
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
 .promotion-popup {
   position: fixed;
   inset: 0;
@@ -160,15 +157,10 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   .promotion-popup,
-<<<<<<< HEAD
   .promotion-popup-panel,
   [data-aos] {
     animation: none;
     transition: none;
-=======
-  .promotion-popup-panel {
-    animation: none;
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
   }
 }
 

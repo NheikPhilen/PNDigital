@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-=======
-import React, { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -21,7 +16,6 @@ import promotionImage from '../assets/images/promotion.jpg'
 
 export default function App(){
   const [isPromotionOpen, setIsPromotionOpen] = useState(true)
-<<<<<<< HEAD
   const location = useLocation()
 
   useEffect(() => {
@@ -47,8 +41,6 @@ export default function App(){
 
     AOS.refreshHard()
   }, [location.pathname])
-=======
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
 
   const closePromotion = () => {
     setIsPromotionOpen(false)
@@ -80,7 +72,6 @@ export default function App(){
 
       <SiteHeader />
 
-<<<<<<< HEAD
       <div className="page-motion" key={location.pathname}>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -94,19 +85,6 @@ export default function App(){
           <Route path="/orders" element={<Orders/>} />
         </Routes>
       </div>
-=======
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/services" element={<Services/>} />
-        <Route path="/services/:detailId" element={<ServiceDetail/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/cart" element={<CartPage/>} />
-        <Route path="/checkout" element={<Checkout/>} />
-        <Route path="/order-confirmation" element={<OrderConfirmation/>} />
-        <Route path="/orders" element={<Orders/>} />
-      </Routes>
->>>>>>> 3675a926c087fcfe6c84b7df2ab91a4d02dc8ca6
     </>
   )
 }
