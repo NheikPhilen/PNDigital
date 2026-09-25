@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url=/order-confirmation?order=">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/order-confirmation">/order-confirmation</a></p>
+    <script>const p=new URLSearchParams(location.search);const o=p.get('order');location.replace('/order-confirmation'+(o?('?order='+encodeURIComponent(o)) : ''))</script>
+  </body>
+</html>
