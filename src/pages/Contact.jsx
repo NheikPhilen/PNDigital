@@ -152,7 +152,7 @@ export default function Contact() {
               </div>
 
               {submitState === 'sent' && (
-                <p style={{ margin: '16px 0 0', color: '#047857', fontWeight: 800 }}>Request sent. Our team has been alerted.</p>
+                <p style={{ margin: '16px 0 0', color: '#047857', fontWeight: 800 }}>ក្រុមការងារនឹងធ្វើការទាក់ទងទៅកាន់លេខទូរស័ព្ទខាងលើក្នុងពេលឆាប់</p>
               )}
               {submitState === 'error' && (
                 <p style={{ margin: '16px 0 0', color: '#b91c1c', fontWeight: 800 }}>Request could not be sent to Telegram. Check your Telegram settings.</p>
