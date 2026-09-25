@@ -31,8 +31,8 @@ function telegramDevApi(env) {
           return sendJson(response, 405, { ok: false, error: 'Method not allowed' })
         }
 
-        const botToken = env.TELEGRAM_BOT_TOKEN
-        const chatId = env.TELEGRAM_CHAT_ID
+        const botToken = env.VITE_TELEGRAM_BOT_TOKEN
+        const chatId = env.VITE_TELEGRAM_CHAT_ID
 
         if (!botToken || !chatId) {
           return sendJson(response, 500, { ok: false, error: 'Telegram bot token or chat id is missing' })
