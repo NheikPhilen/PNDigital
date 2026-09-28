@@ -203,6 +203,13 @@ textarea {
   min-width: 0;
 }
 
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
 .site-nav-link {
   position: relative;
   display: inline-flex;
@@ -315,13 +322,17 @@ textarea {
 
 @media (max-width: 768px) {
   .site-header {
-    padding: 10px 18px;
-    gap: 14px;
+    padding: 10px 12px;
+    gap: 8px;
   }
 
   .site-logo-image {
-    height: 52px;
-    max-width: 190px;
+    height: 46px;
+    max-width: min(36vw, 168px);
+  }
+
+  .site-header-actions {
+    gap: 6px;
   }
 
   .site-menu-button {
@@ -339,12 +350,6 @@ textarea {
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0 8px 22px rgba(17, 24, 39, 0.08);
-  }
-
-  .site-theme-toggle {
-    width: 44px;
-    height: 44px;
-    align-self: flex-start;
   }
 
   .site-menu-backdrop.is-open {
@@ -419,9 +424,9 @@ textarea {
     font-weight: 800;
   }
 
-  .site-language-switch {
-    align-self: flex-start;
-    margin-top: 8px;
+  .site-language-switch button {
+    min-width: 34px;
+    padding: 0 6px;
   }
 }
 
@@ -457,6 +462,7 @@ textarea {
 }
 
 :root[data-theme="dark"] .site-language-switch,
+:root[data-theme="dark"] .site-header-actions .site-theme-toggle,
 :root[data-theme="dark"] .site-theme-toggle,
 :root[data-theme="dark"] .site-menu-button {
   border-color: var(--theme-border);

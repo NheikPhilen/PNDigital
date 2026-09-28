@@ -42,16 +42,47 @@ export default function SiteHeader() {
         <img src={logo} alt="PN Digital" className="site-logo-image" />
       </Link>
 
-      <button
-        type="button"
-        className="site-menu-button"
-        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-        aria-expanded={isMenuOpen}
-        aria-controls="site-navigation"
-        onClick={() => setIsMenuOpen((open) => !open)}
-      >
-        {isMenuOpen ? <FaXmark /> : <FaBars />}
-      </button>
+      <div className="site-header-actions">
+        <div className="site-language-switch" role="group" aria-label="Language">
+          <button
+            type="button"
+            className={language === 'en' ? 'is-selected' : ''}
+            aria-pressed={language === 'en'}
+            onClick={() => setLanguage('en')}
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            className={language === 'km' ? 'is-selected' : ''}
+            aria-pressed={language === 'km'}
+            onClick={() => setLanguage('km')}
+          >
+            ខ្មែរ
+          </button>
+        </div>
+
+        <button
+          type="button"
+          className="site-theme-toggle"
+          aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          aria-pressed={isDarkMode}
+          onClick={() => setIsDarkMode((darkMode) => !darkMode)}
+        >
+          {isDarkMode ? <FaSun aria-hidden="true" /> : <FaMoon aria-hidden="true" />}
+        </button>
+
+        <button
+          type="button"
+          className="site-menu-button"
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="site-navigation"
+          onClick={() => setIsMenuOpen((open) => !open)}
+        >
+          {isMenuOpen ? <FaXmark /> : <FaBars />}
+        </button>
+      </div>
 
       <button
         type="button"
@@ -86,34 +117,6 @@ export default function SiteHeader() {
           </NavLink>
         ))}
 
-        <div className="site-language-switch" role="group" aria-label="Language">
-          <button
-            type="button"
-            className={language === 'en' ? 'is-selected' : ''}
-            aria-pressed={language === 'en'}
-            onClick={() => setLanguage('en')}
-          >
-            EN
-          </button>
-          <button
-            type="button"
-            className={language === 'km' ? 'is-selected' : ''}
-            aria-pressed={language === 'km'}
-            onClick={() => setLanguage('km')}
-          >
-            ខ្មែរ
-          </button>
-        </div>
-
-        <button
-          type="button"
-          className="site-theme-toggle"
-          aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-          aria-pressed={isDarkMode}
-          onClick={() => setIsDarkMode((darkMode) => !darkMode)}
-        >
-          {isDarkMode ? <FaSun aria-hidden="true" /> : <FaMoon aria-hidden="true" />}
-        </button>
       </nav>
     </header>
   )
