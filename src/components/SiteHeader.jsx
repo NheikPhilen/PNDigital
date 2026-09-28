@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { FaArrowRight, FaBars, FaMoon, FaSun, FaXmark } from 'react-icons/fa6'
-import logo from '../../assets/images/logo.png'
+import lightLogo from '../../assets/images/PN Digital Logo.png'
+import darkLogo from '../../assets/images/PN Digital Logo2.png'
 import { useLanguage } from '../LanguageContext'
 
 export default function SiteHeader() {
@@ -9,6 +10,7 @@ export default function SiteHeader() {
   const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('pn-digital-theme') === 'dark')
   const location = useLocation()
   const { language, setLanguage, t } = useLanguage()
+  const logo = isDarkMode ? darkLogo : lightLogo
 
   const closeMenu = () => setIsMenuOpen(false)
 

@@ -59,6 +59,10 @@ textarea {
   --light-yellow: #fef5e7;
 }
 
+.page-motion {
+  overflow-x: clip;
+}
+
 /* Shared AOS scroll reveals. The extra slide variants complement AOS's built-ins. */
 [data-aos="slide-in"] {
   opacity: 0;
@@ -489,8 +493,104 @@ textarea {
   color: var(--theme-text) !important;
 }
 
+:root[data-theme="dark"] .page-motion [style*="background: rgb(255, 255, 255)"],
+:root[data-theme="dark"] .page-motion [style*="background-color: rgb(255, 255, 255)"] {
+  background-color: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+:root[data-theme="dark"] .home-bottom-cta,
+:root[data-theme="dark"] .services-bottom-cta {
+  background-color: var(--theme-surface) !important;
+  background-image: none !important;
+  border-color: var(--theme-border) !important;
+  color: var(--theme-text) !important;
+}
+
+.home-bottom-cta h2,
+.services-bottom-cta h2 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .services-bottom-cta {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding: 24px !important;
+  }
+
+  .services-bottom-cta > a {
+    justify-self: start;
+    max-width: 100%;
+    white-space: normal !important;
+  }
+}
+
 :root[data-theme="dark"] .page-motion :is(h1, h2, h3, h4, p, label, li) {
   color: var(--theme-text) !important;
+}
+
+:root[data-theme="dark"] .page-motion :is(
+  [style*="color: rgb(0, 0, 0)"],
+  [style*="color: rgb(15, 23, 42)"],
+  [style*="color: rgb(16, 24, 39)"],
+  [style*="color: rgb(17, 24, 39)"],
+  [style*="color: rgb(23, 32, 51)"],
+  [style*="color: rgb(31, 41, 55)"],
+  [style*="color: rgb(51, 65, 85)"],
+  [style*="color: rgb(71, 85, 105)"],
+  [style*="color: rgb(75, 85, 99)"]
+):not([style*="background: rgb(253, 175, 6)"]):not([style*="background: rgb(255, 251, 235)"]):not([style*="background: rgb(253, 242, 248)"]):not([style*="background: rgb(255, 243, 213)"]) {
+  color: var(--theme-text) !important;
+}
+
+:root[data-theme="dark"] .page-motion :is(
+  [style*="color: rgb(100, 116, 139)"],
+  [style*="color: rgb(107, 114, 128)"]
+) {
+  color: var(--theme-muted) !important;
+}
+
+:root[data-theme="dark"] .page-motion :is(
+  [style*="color: rgb(154, 91, 0)"],
+  [style*="color: rgb(15, 118, 110)"],
+  [style*="color: rgb(196, 123, 0)"],
+  [style*="color: rgb(189, 120, 2)"],
+  [style*="color: rgb(190, 121, 0)"],
+  [style*="color: rgb(216, 144, 0)"]
+):not([style*="background: rgb(255, 251, 235)"]):not([style*="background: rgb(253, 175, 6)"]) {
+  color: var(--primary-yellow) !important;
+}
+
+:root[data-theme="dark"] .page-motion :is(
+  [style*="color: rgb(190, 24, 93)"],
+  [style*="color: rgb(4, 120, 87)"],
+  [style*="color: rgb(185, 28, 28)"],
+  [style*="color: rgb(22, 163, 74)"]
+):not([style*="background: rgb(253, 242, 248)"]) {
+  color: var(--primary-yellow) !important;
+}
+
+:root[data-theme="dark"] .about-page {
+  --ink: var(--theme-text);
+  --muted: var(--theme-muted);
+  --cream: var(--theme-surface);
+  background: var(--theme-page);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .about-stats,
+:root[data-theme="dark"] .about-strength {
+  background: var(--theme-surface);
+  border-color: var(--theme-border);
+}
+
+:root[data-theme="dark"] .about-page :is(.about-section-label, .about-timeline-year, .about-stat-value) {
+  color: var(--primary-yellow) !important;
+}
+
+:root[data-theme="dark"] .about-stat {
+  border-color: var(--theme-border);
 }
 
 :root[data-theme="dark"] .page-motion input,

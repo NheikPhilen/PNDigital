@@ -439,7 +439,7 @@ export default function Home() {
         {/* Bottom CTA Block */}
         <section className="section-pad" style={{ padding: '72px 40px', background: '#ffffff' }}>
           <div
-            className="section-wrap cta-grid"
+            className="section-wrap cta-grid home-bottom-cta"
             style={{
               display: 'grid',
               gridTemplateColumns: 'minmax(0, 1fr) auto',
