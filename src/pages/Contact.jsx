@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowRight, FaFacebookF, FaLocationDot, FaPaperPlane, FaPhone, FaRegClock, FaTelegram } from 'react-icons/fa6'
 import contactHero from '../../assets/images/HeroBanner.jpg'
+import { useLanguage } from '../LanguageContext'
 
 const initialFormData = {
   name: '',
@@ -12,6 +13,7 @@ const initialFormData = {
 }
 
 export default function Contact() {
+  const { t } = useLanguage()
   const [formData, setFormData] = useState(initialFormData)
   const [submitState, setSubmitState] = useState('idle')
 
@@ -152,7 +154,7 @@ export default function Contact() {
               </div>
 
               {submitState === 'sent' && (
-                <p style={{ margin: '16px 0 0', color: '#047857', fontWeight: 800 }}>ក្រុមការងារនឹងធ្វើការទាក់ទងទៅកាន់លេខទូរស័ព្ទខាងលើក្នុងពេលឆាប់</p>
+                <p style={{ margin: '16px 0 0', color: '#047857', fontWeight: 800 }}>{t('ក្រុមការងារនឹងធ្វើការទាក់ទងទៅកាន់លេខទូរស័ព្ទខាងលើក្នុងពេលឆាប់')}</p>
               )}
               {submitState === 'error' && (
                 <p style={{ margin: '16px 0 0', color: '#b91c1c', fontWeight: 800 }}>Request could not be sent to Telegram. Check your Telegram settings.</p>

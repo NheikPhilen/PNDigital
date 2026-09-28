@@ -8,9 +8,11 @@ import {
   FaFacebookF,
   FaLayerGroup,
   FaHouse,
-  FaTelegram
+  FaTelegram,
+  FaRobot
 } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
+import { useLanguage } from '../LanguageContext'
 import heroBanner from '../../assets/images/HeroBanner.jpg'
 import pageList from '../../assets/images/pagelist.jpg'
 import logo from '../../assets/images/logo.png'
@@ -20,6 +22,7 @@ import feedback from '../../assets/images/product/Feedback.jpg'
 import client from '../../assets/images/product/Client.jpg'
 
 export default function Home() {
+  const { t } = useLanguage()
   const coreServices = [
     {
       title: 'សេវាកម្មប៊ូស Post',
@@ -74,6 +77,33 @@ export default function Home() {
       image: feedback,
       description: 'TikTok follower packages and campaign guidance for creators, sellers, and service brands.',
       features: ['មានចាប់ពី 1k-500k', 'ធានា followerខ្មែរ', 'Freeដូរឈ្មោះ']
+    },
+    {
+      title: 'លក់ Group Telegram',
+      subtitle: 'Group Telegram',
+      label: 'Group Telegram',
+      icon: <FaTelegram />,
+      image: feedback,
+      description: 'សេវាកម្មលក់ Group Telegram តាមតម្រូវការរបស់អតិថិជន។',
+      features: ['ជ្រើសរើស Group តាមតម្រូវការ', 'ពិភាក្សាព័ត៌មានមុនពេលកម្មង់']
+    },
+    {
+      title: 'តម្លើង System Auto Reply',
+      subtitle: 'ប្រព័ន្ធឆ្លើយតបស្វ័យប្រវត្តិ',
+      label: 'Auto Reply',
+      icon: <FaRobot />,
+      image: client,
+      description: 'រៀបចំ និងតម្លើងប្រព័ន្ធឆ្លើយតបស្វ័យប្រវត្តិ ដើម្បីជួយឆ្លើយសារអតិថិជន។',
+      features: ['រៀបចំសារឆ្លើយតបតាមតម្រូវការ', 'តម្លើង និងសាកល្បងប្រព័ន្ធ']
+    },
+    {
+      title: 'Verify Blue Tick on Page and Personal Account',
+      subtitle: 'Page & Personal Account',
+      label: 'Blue Tick Verification',
+      icon: <FaCheck />,
+      image: client,
+      description: 'Guidance preparing verification requests for eligible Pages and personal accounts. Final approval is determined by the platform.',
+      features: ['Review eligibility and requirements', 'Prepare the verification request']
     }
   ]
 
@@ -171,7 +201,7 @@ export default function Home() {
                 PN Digital
               </p>
               <h1 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.18, fontWeight: 950, letterSpacing: 0 }}>
-                ភ្នាក់ងារជួយជម្រុញការលក់របស់ម្ចាស់អាជីវកម្មឲ្យចំអតិថិជនគោលដៅ!
+                {t('ភ្នាក់ងារជួយជម្រុញការលក់របស់ម្ចាស់អាជីវកម្មឲ្យចំអតិថិជនគោលដៅ!')}
               </h1>
               <p style={{ margin: '24px 0 0', maxWidth: 620, color: '#4b5563', fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: 1.75 }}>
                 PN Digital boosts Live Streams to your target audience. Upgrade standard pages to support Live Boosting. Pre-made Live Boost pages for sale.
@@ -182,7 +212,7 @@ export default function Home() {
                   className="action-link"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#000000', padding: '14px 20px', borderRadius: 8, fontWeight: 900 }}
                 >
-                  មើលសេវាកម្ម <FaArrowRight />
+                  {t('មើលសេវាកម្ម')} <FaArrowRight />
                 </Link>
                 <a
                   href="https://t.me/PhaNet0903"
@@ -204,10 +234,10 @@ export default function Home() {
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, alignItems: 'end', flexWrap: 'wrap', marginBottom: 30 }}>
               <div style={{ maxWidth: 690 }}>
                 <p className="section-eyebrow" style={{ color: '#0f766e' }}>Services</p>
-                <h2 className="section-title">សេវាកម្មដែលបងប្អូននឹងទទួលបានពី PN Digital.</h2>
+                <h2 className="section-title">{t('សេវាកម្មដែលបងប្អូននឹងទទួលបានពី PN Digital.')}</h2>
               </div>
               <Link to="/services" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#9a5b00', fontWeight: 900, textDecoration: 'none' }}>
-                មើលសេវាកម្មទាំងអស់ <FaArrowRight />
+                {t('មើលសេវាកម្មទាំងអស់')} <FaArrowRight />
               </Link>
             </div>
 
@@ -238,23 +268,23 @@ export default function Home() {
                       {service.icon}
                     </div>
                     <span style={{ background: '#fffbeb', color: '#9a5b00', border: '1px solid #fde68a', borderRadius: 8, padding: '8px 10px', fontSize: 12, fontWeight: 950, textTransform: 'uppercase' }}>
-                      {service.label}
+                      {t(service.label)}
                     </span>
                   </div>
-                  <h3 style={{ margin: '0 0 12px', fontSize: 24, fontWeight: 950, color: '#101827' }}>{service.title}</h3>
-                  <p style={{ margin: 0, color: '#4b5563', fontSize: 15, lineHeight: 1.75 }}>{service.description}</p>
+                  <h3 style={{ margin: '0 0 12px', fontSize: 24, fontWeight: 950, color: '#101827' }}>{t(service.title)}</h3>
+                  <p style={{ margin: 0, color: '#4b5563', fontSize: 15, lineHeight: 1.75 }}>{t(service.description)}</p>
                   <div style={{ display: 'grid', gap: 12, marginTop: 'auto', paddingTop: 28 }}>
                     {service.features.map((feature) => (
                       <span key={feature} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#172033', fontSize: 15, fontWeight: 850 }}>
                         <span style={{ width: 24, height: 24, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto', fontSize: 12 }}>
                           <FaCheck />
                         </span>
-                        {feature}
+                        {t(feature)}
                       </span>
                     ))}
                   </div>
                   <span style={{ marginTop: 22, alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', background: '#fdaf06', padding: '9px 12px', borderRadius: 8, fontSize: 13, fontWeight: 900, textDecoration: 'none' }}>
-                    មើលព័ត៌មានលម្អិត <FaArrowRight />
+                    {t('មើលព័ត៌មានលម្អិត')} <FaArrowRight />
                   </span>
                 </Link>
               ))}
@@ -266,8 +296,8 @@ export default function Home() {
         <section className="section-pad" style={{ padding: '76px 40px', background: '#f6f7fb' }}>
           <div className="section-wrap split-grid">
             <div>
-              <p className="section-eyebrow" style={{ color: '#9a5b00' }}>ការលក់</p>
-              <h2 className="section-title" style={{ color: '#000000' }}>PN Digital មានលក់ផេកខ្មែរ Followerខ្មែរសុទ្ធ 100%!</h2>
+              <p className="section-eyebrow" style={{ color: '#9a5b00' }}>{t('ការលក់')}</p>
+              <h2 className="section-title" style={{ color: '#000000' }}>{t('PN Digital មានលក់ផេកខ្មែរ Followerខ្មែរសុទ្ធ 100%!')}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Choose the service you need, then we help prepare the right setup for selling, boosting, live promotion, TikTok growth, or ad account use.
               </p>
@@ -290,7 +320,7 @@ export default function Home() {
                     <span style={{ width: 38, height: 38, borderRadius: 8, background: '#fdaf06', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>
                       <FaCheck />
                     </span>
-                    <span style={{ color: '#172033', fontSize: 18, fontWeight: 900 }}>{service}</span>
+                    <span style={{ color: '#172033', fontSize: 18, fontWeight: 900 }}>{t(service)}</span>
                   </div>
                 ))}
               </div>
@@ -318,15 +348,15 @@ export default function Home() {
                     <span style={{ width: 38, height: 38, borderRadius: 8, background: '#fdaf06', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>
                       <FaCheck />
                     </span>
-                    <span style={{ color: '#172033', fontSize: 18, fontWeight: 900 }}>{service}</span>
+                    <span style={{ color: '#172033', fontSize: 18, fontWeight: 900 }}>{t(service)}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="growth-copy">
-              <p className="section-eyebrow" style={{ color: '#0f766e' }}>សេវាកម្ម</p>
-              <h2 className="section-title">PN Digital មានផ្ដល់ជូននូវសេវាកម្មប៊ូសផេក ជួយជម្រុញការលក់!</h2>
+              <p className="section-eyebrow" style={{ color: '#0f766e' }}>{t('សេវាកម្ម')}</p>
+              <h2 className="section-title">{t('PN Digital មានផ្ដល់ជូននូវសេវាកម្មប៊ូសផេក ជួយជម្រុញការលក់!')}</h2>
               <p style={{ margin: '20px 0 0', color: '#4b5563', lineHeight: 1.8, fontSize: 17 }}>
                 Boost your page, increase followers, improve engagement, and push more attention to your videos and live sessions.
               </p>
@@ -340,7 +370,7 @@ export default function Home() {
             <div style={{ width: '100%', aspectRatio: '1 / 1', borderRadius: 8, overflow: 'hidden', background: `linear-gradient(180deg, rgba(16,24,39,0) 35%, rgba(16,24,39,.72) 100%), url(${pageList}) center / cover no-repeat`, boxShadow: '0 28px 74px rgba(0,0,0,.28)' }} />
             <div>
               <p className="section-eyebrow" style={{ color: '#ffffff' }}>Why Choose Us?</p>
-              <h2 className="section-title">ហេតុអ្វីគួរជ្រើសរើសយក PN Digital?</h2>
+              <h2 className="section-title">{t('ហេតុអ្វីគួរជ្រើសរើសយក PN Digital?')}</h2>
               <div style={{ display: 'grid', gap: 18, marginTop: 28 }}>
                 {[
                   ['គុណភាព', 'ផេកល្អគុណភាពធានាជូនអតិថិជ​ន ធានាជូន១ខែ និងធានាថាជាFollowerខ្មែរសុទ្ធ100%'],
@@ -352,8 +382,8 @@ export default function Home() {
                       <FaChartLine />
                     </div>
                     <div>
-                      <h3 style={{ margin: '0 0 6px', fontSize: 19, fontWeight: 950 }}>{title}</h3>
-                      <p style={{ margin: 0, color: '#cbd5e1', lineHeight: 1.7 }}>{text}</p>
+                      <h3 style={{ margin: '0 0 6px', fontSize: 19, fontWeight: 950 }}>{t(title)}</h3>
+                      <p style={{ margin: 0, color: '#cbd5e1', lineHeight: 1.7 }}>{t(text)}</p>
                     </div>
                   </div>
                 ))}
@@ -368,7 +398,7 @@ export default function Home() {
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 24, alignItems: 'end', flexWrap: 'wrap', marginBottom: 30 }}>
               <div style={{ maxWidth: 1200 }}>
                 <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Client feedback</p>
-                <h2 className="section-title">រូបភាពពីការផ្ដើ់លFeedbacksពីអតិថិជន និងការលក់ផ្សេងៗ</h2>
+                <h2 className="section-title">{t('រូបភាពពីការផ្ដើ់លFeedbacksពីអតិថិជន និងការលក់ផ្សេងៗ')}</h2>
               </div>
             </div>
 
@@ -423,14 +453,14 @@ export default function Home() {
           >
             <div>
               <p className="section-eyebrow" style={{ color: '#9a5b00' }}>Ready to move</p>
-              <h2 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.08, fontWeight: 950 }}>តើបងៗកំពុងតែចង់ចាប់ផ្ដើមអាជីវកម្មមែនទេ? អាចប្រឹក្សាយោបល់ជាមួយPN Digitalបាន!</h2>
+              <h2 style={{ margin: 0, fontSize: 'clamp(28px, 4vw, 46px)', lineHeight: 1.08, fontWeight: 950 }}>{t('តើបងៗកំពុងតែចង់ចាប់ផ្ដើមអាជីវកម្មមែនទេ? អាចប្រឹក្សាយោបល់ជាមួយPN Digitalបាន!')}</h2>
             </div>
             <Link
               to="/contact"
               className="action-link"
               style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, textDecoration: 'none', background: '#fdaf06', color: '#000000', padding: '15px 22px', borderRadius: 8, fontWeight: 900, whiteSpace: 'nowrap' }}
             >
-              ទំនាក់ទំនងឥឡូវនេះ <FaArrowRight />
+              {t('ទំនាក់ទំនងឥឡូវនេះ')} <FaArrowRight />
             </Link>
           </div>
         </section>
@@ -454,7 +484,7 @@ export default function Home() {
             </div>
             <div>
               <h4 style={{ margin: '0 0 14px', color: '#fdaf06', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1 }}>Company</h4>
-              <Link to="/about" style={{ display: 'block', color: '#cbd5e1', textDecoration: 'none', marginBottom: 10 }}>អំពីយើង</Link>
+              <Link to="/about" style={{ display: 'block', color: '#cbd5e1', textDecoration: 'none', marginBottom: 10 }}>{t('អំពីយើង')}</Link>
               <Link to="/contact" style={{ display: 'block', color: '#cbd5e1', textDecoration: 'none' }}>Contact</Link>
             </div>
             <div>

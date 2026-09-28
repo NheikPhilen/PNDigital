@@ -12,7 +12,7 @@ import OrderConfirmation from './pages/OrderConfirmation'
 import Orders from './pages/Orders'
 import ServiceDetail from './pages/ServiceDetail'
 import SiteHeader from './components/SiteHeader'
-import promotionImage from '../assets/images/promotion.jpg'
+import promotionImage from '../assets/images/Ben2.jpg'
 
 export default function App(){
   const [isPromotionOpen, setIsPromotionOpen] = useState(true)

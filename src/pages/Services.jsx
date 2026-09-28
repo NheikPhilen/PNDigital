@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaArrowRight, FaBullhorn, FaCheck, FaLayerGroup } from 'react-icons/fa6'
+import { FaArrowRight, FaBullhorn, FaCheck, FaLayerGroup, FaRobot, FaTelegram } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
 import pageVip from '../../assets/images/product/PageVIP.jpg'
 import feedback from '../../assets/images/product/Feedback.jpg'
 import client from '../../assets/images/product/Client.jpg'
+import { useLanguage } from '../LanguageContext'
 
 export default function Services() {
+  const { t } = useLanguage()
   const services = [
     {
       title: 'សេវាកម្មប៊ូស Post',
@@ -55,6 +57,30 @@ export default function Services() {
       image: feedback,
       description: 'TikTok follower packages and campaign guidance for creators, sellers, and service brands.',
       features: ['\u1798\u17b6\u1793\u1785\u17b6\u1794\u17cb\u1796\u17b8 1k-500k', '\u1792\u17b6\u1793\u17b6 follower\u1781\u17d2\u1798\u17c2\u179a', 'Free\u178a\u17bc\u179a\u1788\u17d2\u1798\u17c4\u17c7']
+    },
+    {
+      title: 'លក់ Group Telegram',
+      subtitle: 'Group Telegram',
+      icon: <FaTelegram />,
+      image: feedback,
+      description: 'សេវាកម្មលក់ Group Telegram តាមតម្រូវការរបស់អតិថិជន។',
+      features: ['ជ្រើសរើស Group តាមតម្រូវការ', 'ពិភាក្សាព័ត៌មានមុនពេលកម្មង់']
+    },
+    {
+      title: 'តម្លើង System Auto Reply',
+      subtitle: 'ប្រព័ន្ធឆ្លើយតបស្វ័យប្រវត្តិ',
+      icon: <FaRobot />,
+      image: client,
+      description: 'រៀបចំ និងតម្លើងប្រព័ន្ធឆ្លើយតបស្វ័យប្រវត្តិ ដើម្បីជួយឆ្លើយសារអតិថិជន។',
+      features: ['រៀបចំសារឆ្លើយតបតាមតម្រូវការ', 'តម្លើង និងសាកល្បងប្រព័ន្ធ']
+    },
+    {
+      title: 'Verify Blue Tick on Page and Personal Account',
+      subtitle: 'Page & Personal Account',
+      icon: <FaCheck />,
+      image: client,
+      description: 'Guidance preparing verification requests for eligible Pages and personal accounts. Final approval is determined by the platform.',
+      features: ['Review eligibility and requirements', 'Prepare the verification request']
     }
   ]
 
@@ -86,7 +112,7 @@ export default function Services() {
           <div className="services-wrap">
             <div style={{ maxWidth: 900, marginBottom: 32 }}>
               <p className="services-eyebrow" style={{ color: '#0f766e' }}>Service details</p>
-              <h2 className="services-title" style={{ color: '#101827' }}>PN Digital មានសេវាកម្មដូចជា៖</h2>
+              <h2 className="services-title" style={{ color: '#101827' }}>{t('PN Digital មានសេវាកម្មដូចជា៖')}</h2>
             </div>
 
             <div className="services-grid">
@@ -97,21 +123,21 @@ export default function Services() {
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 14, marginTop: -54, marginBottom: 22 }}>
                       <div className="service-icon">{service.icon}</div>
                     </div>
-                    <h3 style={{ margin: '0 0 6px', fontSize: 28, fontWeight: 950 }}>{service.title}</h3>
-                    <p style={{ margin: '0 0 14px', color: '#9a5b00', fontWeight: 900 }}>{service.subtitle}</p>
-                    <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.75 }}>{service.description}</p>
+                    <h3 style={{ margin: '0 0 6px', fontSize: 28, fontWeight: 950 }}>{t(service.title)}</h3>
+                    <p style={{ margin: '0 0 14px', color: '#9a5b00', fontWeight: 900 }}>{t(service.subtitle)}</p>
+                    <p style={{ margin: 0, color: '#4b5563', lineHeight: 1.75 }}>{t(service.description)}</p>
                     <div className="service-features">
                       {service.features.map((feature) => (
                         <span key={feature} style={{ display: 'flex', alignItems: 'center', gap: 10, color: '#172033', fontWeight: 800, lineHeight: 1.45 }}>
                           <span style={{ width: 24, height: 24, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto', fontSize: 12 }}>
                             <FaCheck />
                           </span>
-                          {feature}
+                          {t(feature)}
                         </span>
                       ))}
                     </div>
                     <span className="service-detail-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#101827', background: '#fdaf06', padding: '9px 12px', borderRadius: 8, fontSize: 13, fontWeight: 900, textDecoration: 'none' }}>
-                      មើលព័ត៌មានលម្អិត <FaArrowRight />
+                      {t('មើលព័ត៌មានលម្អិត')} <FaArrowRight />
                     </span>
                   </div>
                 </Link>
@@ -121,7 +147,7 @@ export default function Services() {
         </section>
         <section className="services-pad" style={{ background: '#ffffff' }}>
           <div className="services-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) auto', gap: 24, alignItems: 'center', padding: 32, borderRadius: 8, background: 'linear-gradient(135deg, #fff7ed 0%, #eef6ff 100%)', border: '1px solid #e5e7eb' }}>
-            <h2 style={{ margin: 0, fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.12, fontWeight: 950 }}>បងៗពេញចិត្តសេវាកម្មមួយណាអាចពិភាក្សាតាមរយៈ</h2>
+            <h2 style={{ margin: 0, fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.12, fontWeight: 950 }}>{t('បងៗពេញចិត្តសេវាកម្មមួយណាអាចពិភាក្សាតាមរយៈ')}</h2>
             <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 10, color: '#fff', background: '#101827', padding: '14px 18px', borderRadius: 8, fontWeight: 900, textDecoration: 'none', whiteSpace: 'nowrap' }}>
               Telegram
             </Link>

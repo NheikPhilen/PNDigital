@@ -92,7 +92,8 @@ textarea {
 
 .promotion-popup-panel {
   position: relative;
-  width: min(92vw, 720px);
+  width: fit-content;
+  max-width: min(92vw, 720px);
   max-height: min(88vh, 860px);
   border-radius: 8px;
   background: #fff;
@@ -128,7 +129,8 @@ textarea {
 
 .promotion-popup-image {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   max-height: min(88vh, 860px);
   object-fit: contain;
 }
@@ -253,6 +255,55 @@ textarea {
   transform: scaleX(0);
 }
 
+.site-language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.site-language-switch button {
+  min-width: 40px;
+  min-height: 34px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.site-language-switch button.is-selected {
+  background: var(--primary-yellow);
+  color: #101827;
+}
+
+.site-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #172033;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.site-theme-toggle:hover {
+  background: #fff7df;
+  border-color: var(--primary-yellow);
+}
+
 .site-menu-button,
 .site-menu-backdrop {
   display: none;
@@ -288,6 +339,12 @@ textarea {
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0 8px 22px rgba(17, 24, 39, 0.08);
+  }
+
+  .site-theme-toggle {
+    width: 44px;
+    height: 44px;
+    align-self: flex-start;
   }
 
   .site-menu-backdrop.is-open {
@@ -360,5 +417,96 @@ textarea {
     color: #101827;
     background: var(--primary-yellow);
     font-weight: 800;
+  }
+
+  .site-language-switch {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --theme-page: #10151e;
+  --theme-surface: #1a2230;
+  --theme-surface-raised: #202a39;
+  --theme-border: #354153;
+  --theme-text: #e8edf5;
+  --theme-muted: #aeb9c9;
+}
+
+:root[data-theme="dark"] body {
+  background: var(--theme-page);
+  color: var(--theme-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+:root[data-theme="dark"] .site-header {
+  background: rgba(18, 24, 34, 0.94);
+  border-bottom-color: #d99b00;
+}
+
+:root[data-theme="dark"] .site-nav-link,
+:root[data-theme="dark"] .site-nav-link:hover,
+:root[data-theme="dark"] .site-nav-link.is-active {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .site-nav-link::after {
+  background: var(--primary-yellow);
+}
+
+:root[data-theme="dark"] .site-language-switch,
+:root[data-theme="dark"] .site-theme-toggle,
+:root[data-theme="dark"] .site-menu-button {
+  border-color: var(--theme-border);
+  background: var(--theme-surface-raised);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .site-language-switch button {
+  color: var(--theme-muted);
+}
+
+:root[data-theme="dark"] .site-language-switch button.is-selected {
+  color: #101827;
+}
+
+:root[data-theme="dark"] .page-motion > div {
+  background-color: var(--theme-page) !important;
+  color: var(--theme-text) !important;
+}
+
+:root[data-theme="dark"] .page-motion :is(section, article, form, aside, [class*="card"], [class*="panel"], [class*="summary"], .hero-content) {
+  background-color: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+  color: var(--theme-text) !important;
+}
+
+:root[data-theme="dark"] .page-motion :is(h1, h2, h3, h4, p, label, li) {
+  color: var(--theme-text) !important;
+}
+
+:root[data-theme="dark"] .page-motion input,
+:root[data-theme="dark"] .page-motion select,
+:root[data-theme="dark"] .page-motion textarea {
+  border-color: var(--theme-border) !important;
+  background-color: var(--theme-surface-raised) !important;
+  color: var(--theme-text) !important;
+}
+
+:root[data-theme="dark"] .page-motion input::placeholder,
+:root[data-theme="dark"] .page-motion textarea::placeholder {
+  color: var(--theme-muted);
+}
+
+@media (max-width: 768px) {
+  :root[data-theme="dark"] .site-nav {
+    background: var(--theme-page);
+    border-right-color: var(--theme-border);
+  }
+
+  :root[data-theme="dark"] .site-nav-link {
+    color: var(--theme-text);
   }
 }

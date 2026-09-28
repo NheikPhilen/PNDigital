@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { FaArrowLeft, FaArrowRight, FaBullhorn, FaCheck, FaLayerGroup } from 'react-icons/fa6'
+import { FaArrowLeft, FaArrowRight, FaBullhorn, FaCheck, FaLayerGroup, FaRobot, FaTelegram } from 'react-icons/fa6'
 import { SiTiktok } from 'react-icons/si'
 import pageVip from '../../assets/images/product/PageVIP.jpg'
 import feedback from '../../assets/images/product/Feedback.jpg'
 import client from '../../assets/images/product/Client.jpg'
+import { useLanguage } from '../LanguageContext'
 
 const serviceDetails = {
   detail1: {
@@ -81,10 +82,44 @@ const serviceDetails = {
       'ធានា followerខ្មែរ',
       'Freeដូរឈ្មោះ'
     ]
+  },
+  detail7: {
+    title: 'លក់ Group Telegram',
+    subtitle: 'Group Telegram',
+    icon: <FaTelegram />,
+    image: feedback,
+    description: 'សេវាកម្មលក់ Group Telegram តាមតម្រូវការរបស់អតិថិជន។',
+    points: [
+      'ជ្រើសរើស Group តាមតម្រូវការ',
+      'ពិភាក្សាព័ត៌មានមុនពេលកម្មង់'
+    ]
+  },
+  detail8: {
+    title: 'តម្លើង System Auto Reply',
+    subtitle: 'ប្រព័ន្ធឆ្លើយតបស្វ័យប្រវត្តិ',
+    icon: <FaRobot />,
+    image: client,
+    description: 'រៀបចំ និងតម្លើងប្រព័ន្ធឆ្លើយតបស្វ័យប្រវត្តិ ដើម្បីជួយឆ្លើយសារអតិថិជន។',
+    points: [
+      'រៀបចំសារឆ្លើយតបតាមតម្រូវការ',
+      'តម្លើង និងសាកល្បងប្រព័ន្ធ'
+    ]
+  },
+  detail9: {
+    title: 'Verify Blue Tick on Page and Personal Account',
+    subtitle: 'Page & Personal Account',
+    icon: <FaCheck />,
+    image: client,
+    description: 'Guidance preparing verification requests for eligible Pages and personal accounts. Final approval is determined by the platform.',
+    points: [
+      'Review eligibility and requirements',
+      'Prepare the verification request'
+    ]
   }
 }
 
 export default function ServiceDetail() {
+  const { t } = useLanguage()
   const { detailId } = useParams()
   const service = serviceDetails[detailId] || serviceDetails.detail1
 
@@ -108,9 +143,9 @@ export default function ServiceDetail() {
               {service.icon}
             </div>
             <p style={{ margin: '0 0 10px', color: '#9a5b00', fontSize: 13, fontWeight: 950, textTransform: 'uppercase', letterSpacing: 1.2 }}>Service detail</p>
-            <h1 style={{ margin: 0, fontSize: 'clamp(34px, 5vw, 58px)', lineHeight: 1.05, fontWeight: 950 }}>{service.title}</h1>
-            <p style={{ margin: '12px 0 0', color: '#9a5b00', fontSize: 18, fontWeight: 900 }}>{service.subtitle}</p>
-            <p style={{ margin: '22px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>{service.description}</p>
+            <h1 style={{ margin: 0, fontSize: 'clamp(34px, 5vw, 58px)', lineHeight: 1.05, fontWeight: 950 }}>{t(service.title)}</h1>
+            <p style={{ margin: '12px 0 0', color: '#9a5b00', fontSize: 18, fontWeight: 900 }}>{t(service.subtitle)}</p>
+            <p style={{ margin: '22px 0 0', color: '#4b5563', fontSize: 17, lineHeight: 1.85 }}>{t(service.description)}</p>
 
             <div style={{ display: 'grid', gap: 12, marginTop: 26 }}>
               {service.points.map((point) => (
@@ -118,7 +153,7 @@ export default function ServiceDetail() {
                   <span style={{ width: 26, height: 26, borderRadius: 8, background: '#fdaf06', color: '#101827', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto', fontSize: 12 }}>
                     <FaCheck />
                   </span>
-                  {point}
+                  {t(point)}
                 </div>
               ))}
             </div>
